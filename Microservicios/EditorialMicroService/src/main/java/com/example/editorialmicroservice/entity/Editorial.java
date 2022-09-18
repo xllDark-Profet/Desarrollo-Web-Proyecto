@@ -14,11 +14,10 @@ public class Editorial {
 
     @Column
     @NotNull
-    private String nombre;
+    private String name;
 
     @Column
-    @NotNull
-    private String url;
+    private String web_site;
 
     public Integer getId() {
         return id;
@@ -29,19 +28,19 @@ public class Editorial {
     }
 
     public String getNombre() {
-        return nombre;
+        return name;
     }
 
     public void setNombre(String nombre) {
-        this.nombre = nombre;
+        this.name= nombre;
     }
 
     public String getUrl() {
-        return url;
+        return web_site;
     }
 
     public void setUrl(String url) {
-        this.url = url;
+        this.web_site = url;
     }
 
 

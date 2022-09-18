@@ -14,39 +14,31 @@ public class UserService {
     @Autowired
     UserRepository userRepository;
 
+    //Post
+    @Transactional
+    public int createUser(@NotNull @org.jetbrains.annotations.NotNull User newUser) {
+        return userRepository.createUser(newUser.getUsar_name(), newUser.getPassword());
+    }
+
     //Get all
     public ArrayList<User> getAllUsers() {
         return userRepository.findAll();
     }
-
     //Get by id
-    public User getUserById(Integer id) {
-        User userById = new User();
-        userById = userRepository.findUserBy(id);
-        return userById;
+    public User getUserById(String username) {
+       return userRepository.findUserBy(username);
     }
-
     //Put
     @Transactional
     public int updateUser(@NotNull @org.jetbrains.annotations.NotNull User updateOne) {
-        int recibe = -10;
-        recibe = userRepository.updateUser(updateOne.getNombre(), updateOne.getPassword(), updateOne.getId());
-        return recibe;
-    }
-
-    //Post
-    @Transactional
-    public int createUser(@NotNull @org.jetbrains.annotations.NotNull User newUser) {
-        int recibe = -10;
-        recibe =userRepository.createUser(newUser.getId(), newUser.getNombre(), newUser.getPassword());
-        return recibe;
+        return userRepository.updateUser(updateOne.getPassword(), updateOne.getUsar_name());
     }
 
     //Delete
     @Transactional
-    public int deleteUser(Integer id) {
+    public int deleteUser(String username) {
         int recibe = -10;
-        recibe = userRepository.deleteUserBy(id);
+        recibe = userRepository.deleteUserBy(username);
         return recibe;
     }
 

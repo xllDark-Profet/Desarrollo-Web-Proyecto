@@ -10,32 +10,18 @@ import javax.persistence.*;
 public class User {
     @Id
     @Column
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
-
-    private Integer id;
-
-    @Column
     @NotNull
-    private String nombre;
-
+    private String usar_name;
     @Column
     @NotNull
     private String password;
 
-    public Integer getId() {
-        return id;
+    public String getUsar_name() {
+        return usar_name;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setUsar_name(String usar_name) {
+        this.usar_name = usar_name;
     }
 
     public String getPassword() {

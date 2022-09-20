@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Microservicios/APIGateway/APIGateway.iml" filepath="$PROJECT_DIR$/Microservicios/APIGateway/APIGateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Microservicios/BookMicroService/BookService.iml" filepath="$PROJECT_DIR$/Microservicios/BookMicroService/BookService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Desarrollo-Web-Proyecto.iml" filepath="$PROJECT_DIR$/.idea/Desarrollo-Web-Proyecto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Microservicios/DiscoveryServer/DiscoveryServer.iml" filepath="$PROJECT_DIR$/Microservicios/DiscoveryServer/DiscoveryServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Microservicios/EditorialMicroService/EditorialMicroService.iml" filepath="$PROJECT_DIR$/Microservicios/EditorialMicroService/EditorialMicroService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Microservicios/PersonMicroService/PersonService.iml" filepath="$PROJECT_DIR$/Microservicios/PersonMicroService/PersonService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Microservicios/UserMicroService/UserMicroService.iml" filepath="$PROJECT_DIR$/Microservicios/UserMicroService/UserMicroService.iml" />
+    </modules>
+  </component>
+</project>

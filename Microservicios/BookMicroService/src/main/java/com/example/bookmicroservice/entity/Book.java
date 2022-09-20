@@ -12,32 +12,26 @@ public class Book {
     @Id
     @Column
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
-
     private Integer id;
-
     @Column
     @NotNull
     private String name;
-
     @Column
-    @NotNull
     private String description;
-
-
-
     @Column
     @NotNull
-    private String editorial;
-
+    private String editorial_id;
     @Column
     @NotNull
-    private String fechaEdicion;
-
+    private String date_edition;
     @Column
     @NotNull
-    private String imageUrl;
+    private String image_url;
+    @Column
+    @NotNull
+    private  Integer quantity;
 
-
+    //Get and Set
 
     public Integer getId() {
         return id;
@@ -63,29 +57,36 @@ public class Book {
         this.description = description;
     }
 
-    public String getEditorial() {
-        return editorial;
+    public String getEditorial_id() {
+        return editorial_id;
     }
 
-    public void setEditorial(String editorial) {
-        this.editorial = editorial;
+    public void setEditorial_id(String editorial_id) {
+        this.editorial_id = editorial_id;
     }
 
-    public String getFechaEdicion() {
-        return fechaEdicion;
+    public String getDate_edition() {
+        return date_edition;
     }
 
-    public void setFechaEdicion(String fechaEdicion) {
-        this.fechaEdicion = fechaEdicion;
+    public void setDate_edition(String date_edition) {
+        this.date_edition = date_edition;
     }
 
-    public String getImageUrl() {
-        return imageUrl;
+    public String getImage_url() {
+        return image_url;
     }
 
-    public void setImageUrl(String imageUrl) {
-        this.imageUrl = imageUrl;
+    public void setImage_url(String image_url) {
+        this.image_url = image_url;
     }
 
+    public Integer getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(Integer quantity) {
+        this.quantity = quantity;
+    }
 }
 

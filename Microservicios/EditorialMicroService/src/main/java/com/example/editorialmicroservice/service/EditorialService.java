@@ -1,5 +1,7 @@
 package com.example.editorialmicroservice.service;
 
+import com.example.editorialmicroservice.DTO.DTOChangeName;
+import com.example.editorialmicroservice.DTO.DTOChangeWebSite;
 import com.example.editorialmicroservice.entity.Editorial;
 import com.example.editorialmicroservice.repository.EditorialRepository;
 import com.sun.istack.NotNull;
@@ -14,6 +16,14 @@ public class EditorialService {
     @Autowired
     EditorialRepository editorialRepository;
 
+    //Post
+    @Transactional
+    public int createEditorial(@NotNull @org.jetbrains.annotations.NotNull Editorial newUser) {
+        int recibe = -10;
+        recibe =editorialRepository.createEditorial(newUser.getId(), newUser.getNombre(), newUser.getUrl());
+        return recibe;
+    }
+
     //Get all
     public ArrayList<Editorial> getAllEditorial() {
         return editorialRepository.findAll();
@@ -22,11 +32,9 @@ public class EditorialService {
     //Get by id
     public Editorial getEditorialById(Integer id) {
         Editorial editorialById = new Editorial();
-        editorialById = editorialRepository.findEditorialBy(id);
+        editorialById = editorialRepository.findEditorialById(id);
         return editorialById;
     }
-
-
     //Put
     @Transactional
     public int updateEditorial(@NotNull @org.jetbrains.annotations.NotNull Editorial updateOne) {
@@ -35,11 +43,18 @@ public class EditorialService {
         return recibe;
     }
 
-    //Post
     @Transactional
-    public int createEditorial(@NotNull @org.jetbrains.annotations.NotNull Editorial newUser) {
-        int recibe = -10;
-        recibe =editorialRepository.createEditorial(newUser.getId(), newUser.getNombre(), newUser.getUrl());
+    public int updateName(@NotNull DTOChangeName dtoChangeName){
+        int recibe=-10;
+        recibe=editorialRepository.updateEditorialName(dtoChangeName.getName(), dtoChangeName.getId());
+        return recibe;
+    }
+
+    @Transactional
+    public int updateWebSite(@org.jetbrains.annotations.NotNull DTOChangeWebSite dtoChangeWebSite){
+        int recibe=-10;
+        System.out.println(dtoChangeWebSite.getId()+ "  y  "+ dtoChangeWebSite.getWebsite());
+        recibe=editorialRepository.updateEditorialUrl(dtoChangeWebSite.getWebsite(), dtoChangeWebSite.getId());
         return recibe;
     }
 

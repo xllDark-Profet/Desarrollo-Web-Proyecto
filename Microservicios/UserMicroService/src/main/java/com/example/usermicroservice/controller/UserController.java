@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 
 @RestController
+@RequestMapping("/users")
 public class UserController {
 
     @Autowired
@@ -34,7 +35,7 @@ public class UserController {
 
     //GET
     @GetMapping("/user/{idUser}")
-    private User getJustOneUser(@PathVariable("idUser") Integer id) {
+    private User getJustOneUser(@PathVariable("idUser") String id) {
         return userService.getUserById(id);
     }
 
@@ -54,8 +55,8 @@ public class UserController {
 
     //Delete
     @DeleteMapping("/userDelete/{idUser}")
-    private String deleteUser(@PathVariable("idUser") Integer id) {
-        int auxiliar = userService.deleteUser(id);
+    private String deleteUser(@PathVariable("idUser") String username) {
+        int auxiliar = userService.deleteUser(username);
         String retorno = "";
         if (auxiliar == 1) {
             retorno = "Se elimino exitosamente";

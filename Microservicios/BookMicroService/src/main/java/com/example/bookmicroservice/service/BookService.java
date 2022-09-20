@@ -13,6 +13,14 @@ public class BookService {
     @Autowired
     BookRepository bookRepository;
 
+    //Post
+    @Transactional
+    public int createBook(@NotNull @org.jetbrains.annotations.NotNull Book newBook) {
+        int recibe = -10;
+        recibe = bookRepository.createBook(newBook.getName(), newBook.getDescription(), newBook.getEditorial_id(), newBook.getDate_edition(), newBook.getImage_url(), newBook.getQuantity());
+        return recibe;
+    }
+
     //Get all
     public ArrayList<Book> getAllBooks() {
         return bookRepository.findAll();
@@ -20,24 +28,47 @@ public class BookService {
 
     //Get by id
     public Book getBookById(Integer id) {
-        Book bookById = new Book();
-        bookById = bookRepository.findBookById(id);
-        return bookById;
+        return bookRepository.findBookById(id);
+    }
+
+    //Get by name
+    public Book getBookByName(String name) {
+        String aux="%";
+        aux=aux+name+"%";
+       return bookRepository.findBookByName(aux);
+    }
+    //Get by editorial number
+    public ArrayList<Book> getBooksByEditorial(Integer editorial_id){
+        return bookRepository.finBookByEditorial_id(editorial_id);
     }
 
     //Put
     @Transactional
     public int updateBook(@NotNull @org.jetbrains.annotations.NotNull Book updateOne) {
         int recibe = -10;
-        recibe = bookRepository.updateBook(updateOne.getName(), updateOne.getDescription(), updateOne.getEditorial(), updateOne.getFechaEdicion(), updateOne.getImageUrl(), updateOne.getId());
+        recibe = bookRepository.updateBook(updateOne.getName(), updateOne.getDescription(), updateOne.getEditorial_id(), updateOne.getDate_edition(),updateOne.getImage_url(), updateOne.getQuantity(), updateOne.getId());
         return recibe;
     }
 
-    //Post
+    //Patch
     @Transactional
-    public int createBook(@NotNull @org.jetbrains.annotations.NotNull Book newBook) {
-        int recibe = -10;
-        recibe = bookRepository.createBook(newBook.getId(), newBook.getName(), newBook.getDescription(), newBook.getEditorial(), newBook.getFechaEdicion(), newBook.getImageUrl());
+    public int patchName(@NotNull @org.jetbrains.annotations.NotNull String name, @NotNull @org.jetbrains.annotations.NotNull Integer id){
+        int recibe=-10;
+        recibe=bookRepository.patchName(name,id);
+        return recibe;
+    }
+
+    @Transactional
+    public int patchQuantity(@NotNull @org.jetbrains.annotations.NotNull Integer quantity, @NotNull @org.jetbrains.annotations.NotNull Integer id){
+        int recibe=-10;
+        recibe=bookRepository.patchQuantity(quantity,id);
+        return recibe;
+    }
+
+    @Transactional
+    public int patchDescription(@NotNull @org.jetbrains.annotations.NotNull String description, @NotNull @org.jetbrains.annotations.NotNull Integer id){
+        int recibe=-10;
+        recibe=bookRepository.patchDescription(description,id);
         return recibe;
     }
 

@@ -12,25 +12,23 @@ public class Person {
 
     @Id
     @Column
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
-
     private Integer id;
 
     @Column
     @NotNull
-    private String nombre;
+    private String name;
 
     @Column
     @NotNull
-    private String apellido;
+    private String surname;
 
     @Column
     @NotNull
-    private String fechaNacimiento;
+    private String birth;
 
     @Column
     @NotNull
-    private String cargo;
+    private String charge;
 
 
     public Integer getId() {
@@ -41,37 +39,35 @@ public class Person {
         this.id = id;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getName() {
+        return name;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getApellido() {
-        return apellido;
+    public String getSurname() {
+        return surname;
     }
 
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
+    public void setSurname(String surname) {
+        this.surname = surname;
     }
 
-    public String getFechaNacimiento() {
-        return fechaNacimiento;
+    public String getBirth() {
+        return birth;
     }
 
-    public void setFechaNacimiento(String fechaNacimiento) {
-        this.fechaNacimiento = fechaNacimiento;
+    public void setBirth(String birth) {
+        this.birth = birth;
     }
 
-    public String getCargo() {
-        return cargo;
+    public String getCharge() {
+        return charge;
     }
 
-    public void setCargo(String cargo) {
-        this.cargo = cargo;
+    public void setCharge(String charge) {
+        this.charge = charge;
     }
-
-
 }

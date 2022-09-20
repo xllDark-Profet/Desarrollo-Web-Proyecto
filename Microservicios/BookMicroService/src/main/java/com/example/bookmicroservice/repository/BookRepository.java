@@ -11,29 +11,47 @@ import java.util.ArrayList;
 @Controller
 public interface BookRepository extends JpaRepository<Book, Integer> {
 
+    //Post
+    @Modifying
+    @Query(value = "insert into desarolloweb.book (name, description, editorial_id, date_edition, image_url, quantity) values (?1, ?2, ?3, ?4, ?5, ?6)", nativeQuery = true)
+    int createBook(String name, String description, String editorial, String fechaEdicion, String image_url, Integer quantity);
+
+    //Get
     //getAllBooks
-    @Query(value = "SELECT id, name, description, editorial, fechaEdicion, image_url FROm desarolloweb.book", nativeQuery = true)
+    @Query(value = "SELECT * FROM desarolloweb.book", nativeQuery = true)
     ArrayList<Book> findAll();
 
-    //getJustOneBook
-    @Query(value = "select id, name, description, editorial, fechaEdicion, image_url from desarolloweb.book where id=?1", nativeQuery = true)
+    //getJustOneBookById
+    @Query(value = "SELECT * FROM desarolloweb.book WHERE id=?1", nativeQuery = true)
     Book findBookById(Integer id);
+    //hetJustOneBookByName
+    @Query(value="SELECT * FROM desarolloweb.book WHERE name like ?1", nativeQuery = true)
+    Book findBookByName(String Name );
+    //getBooksFromEditorial
+    @Query(value="SELECT * FROM desarolloweb.book WHERE editorial_id=?1", nativeQuery = true)
+    ArrayList<Book> finBookByEditorial_id(Integer editorial_id);
 
     //Put
     @Modifying
-    @Query(value = "update desarolloweb.book set name=?1, description=?2, editorial=?3, fechaEdicion=?4, image_url=?5 where id=?6", nativeQuery = true)
-    int updateBook(String name, String description, String editorial, String fechaEdicion ,String image_url, Integer id);
+    @Query(value = "UPDATE desarolloweb.book SET name=?1, description=?2, editorial_id=?3, date_edition=?4, image_url=?5, quantity=?6 WHERE id=?7", nativeQuery = true)
+    int updateBook(String name, String description, String editorial, String date_edition ,String image_url, Integer quantity, Integer id);
 
-
-    //Post
+    //Patch
     @Modifying
-    @Query(value = "insert into desarolloweb.book (id, name, description, editorial, fechaEdicion, image_url) values (?1, ?2, ?3, ?4, ?5, ?6)", nativeQuery = true)
-    int createBook(Integer id, String name, String description, String editorial, String fechaEdicion, String image_url);
+    @Query(value = "UPDATE desarolloweb.book SET name=?1 WHERE id=?2", nativeQuery = true)
+    int patchName(String name, Integer id);
+
+    @Modifying
+    @Query(value = "UPDATE desarolloweb.book SET description=?1 WHERE id=?2", nativeQuery = true)
+    int patchDescription(String description, Integer id);
+
+    @Modifying
+    @Query(value = "UPDATE desarolloweb.book SET quantity=?1 WHERE id=?2", nativeQuery = true)
+    int patchQuantity(Integer quantity, Integer id);
 
     //Delete
     @Modifying
     @Query(value = "delete from desarolloweb.book where id=?1", nativeQuery = true)
     int deleteBookById(Integer id);
-
 
 }

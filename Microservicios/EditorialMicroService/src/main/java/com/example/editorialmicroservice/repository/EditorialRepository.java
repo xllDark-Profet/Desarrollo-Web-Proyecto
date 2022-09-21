@@ -42,8 +42,8 @@ public interface EditorialRepository extends JpaRepository<Editorial,Integer> {
 
     //Post
     @Modifying
-    @Query(value = "insert into desarolloweb.editorial (id, name, url) values (?1, ?2, ?3)", nativeQuery = true)
-    int createEditorial(Integer id, String nombre, String url);
+    @Query(value = "insert into desarolloweb.editorial (id, name, web_site) values (?1, ?2, ?3)", nativeQuery = true)
+    int createEditorial(Integer id, String nombre, String web_site);
 
     //Delete
     @Modifying

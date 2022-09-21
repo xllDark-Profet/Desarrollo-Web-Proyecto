@@ -7,6 +7,7 @@ import com.example.editorialmicroservice.repository.EditorialRepository;
 import com.sun.istack.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 
 import javax.transaction.Transactional;
 import java.util.ArrayList;
@@ -62,7 +63,33 @@ public class EditorialService {
     @Transactional
     public int deleteEditorial(Integer id) {
         int recibe = -10;
-        recibe = editorialRepository.deleteEditorialBy(id);
+        Boolean result=true;
+        result=editorialInventoryBooks(id);
+        if(result==false){
+            recibe = editorialRepository.deleteEditorialBy(id);
+        }
         return recibe;
     }
+
+
+    //Communication with BookService
+    //Books By Editorial
+    public Boolean editorialInventoryBooks(Integer idEditorial) {
+        Boolean result = false;
+        ArrayList<Integer> ids = new RestTemplate().getForObject("http://localhost:8081/books/getUseId", ArrayList.class);
+        for (Integer inte : ids) {
+            if (inte == idEditorial) {
+                result = true;
+            }
+        }
+        return result;
+    }
+
+    public ArrayList<Integer> getIdAllEditorial() {
+        return editorialRepository.findAllId();
+    }
+
+
+
+
 }

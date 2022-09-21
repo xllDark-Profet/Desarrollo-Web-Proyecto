@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78af29c7-c174-44f4-9ae1-b5d9b1128af5" name="Changes" comment="" />
+    <list default="true" id="78af29c7-c174-44f4-9ae1-b5d9b1128af5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservicios/BookMicroService/src/main/java/com/example/bookmicroservice/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Microservicios/BookMicroService/src/main/java/com/example/bookmicroservice/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservicios/BookMicroService/src/main/java/com/example/bookmicroservice/entity/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/Microservicios/BookMicroService/src/main/java/com/example/bookmicroservice/entity/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservicios/BookMicroService/src/main/java/com/example/bookmicroservice/repository/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Microservicios/BookMicroService/src/main/java/com/example/bookmicroservice/repository/BookRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservicios/BookMicroService/src/main/java/com/example/bookmicroservice/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Microservicios/BookMicroService/src/main/java/com/example/bookmicroservice/service/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservicios/BookMicroService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Microservicios/BookMicroService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservicios/EditorialMicroService/src/main/java/com/example/editorialmicroservice/controller/EditorialController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Microservicios/EditorialMicroService/src/main/java/com/example/editorialmicroservice/controller/EditorialController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservicios/EditorialMicroService/src/main/java/com/example/editorialmicroservice/repository/EditorialRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Microservicios/EditorialMicroService/src/main/java/com/example/editorialmicroservice/repository/EditorialRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservicios/EditorialMicroService/src/main/java/com/example/editorialmicroservice/service/EditorialService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Microservicios/EditorialMicroService/src/main/java/com/example/editorialmicroservice/service/EditorialService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservicios/EditorialMicroService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Microservicios/EditorialMicroService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservicios/PersonMicroService/src/main/java/com/example/personmicroservice/service/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Microservicios/PersonMicroService/src/main/java/com/example/personmicroservice/service/PersonService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservicios/PersonMicroService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Microservicios/PersonMicroService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservicios/UserMicroService/src/main/java/com/example/usermicroservice/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Microservicios/UserMicroService/src/main/java/com/example/usermicroservice/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservicios/UserMicroService/src/main/java/com/example/usermicroservice/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Microservicios/UserMicroService/src/main/java/com/example/usermicroservice/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservicios/UserMicroService/src/main/java/com/example/usermicroservice/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Microservicios/UserMicroService/src/main/java/com/example/usermicroservice/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservicios/UserMicroService/src/main/java/com/example/usermicroservice/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Microservicios/UserMicroService/src/main/java/com/example/usermicroservice/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservicios/UserMicroService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Microservicios/UserMicroService/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,24 +72,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/marir/OneDrive/Desktop/ingenieria/septimo/distri/NuevoProyecto/Desarrollo-Web-Proyecto/Microservicios&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;9c57e5d8cfb1d07fb002436038765c8b&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "11",
+    "last_opened_file_path": "C:/Users/marir/OneDrive/Desktop/ingenieria/septimo/distri/NuevoProyecto/Desarrollo-Web-Proyecto",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "spring.configuration.checksum": "2895c8974e289c6c76190481e9c8be7f"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\marir\OneDrive\Desktop\ingenieria\septimo\distri\NuevoProyecto\Desarrollo-Web-Proyecto\Microservicios\APIGateway" />
@@ -134,6 +152,11 @@
       <workItem from="1663424708339" duration="5777000" />
       <workItem from="1663448791093" duration="3381000" />
       <workItem from="1663527520269" duration="13000" />
+      <workItem from="1663711939727" duration="629000" />
+      <workItem from="1663714371852" duration="279000" />
+      <workItem from="1663714668817" duration="15000" />
+      <workItem from="1663722853143" duration="82000" />
+      <workItem from="1663739234558" duration="7901000" />
     </task>
     <servers />
   </component>

@@ -14,20 +14,16 @@ public interface UserRepository extends JpaRepository<User, String> {
     @Query(value = "SELECT * FROm desarolloweb.user", nativeQuery = true)
     ArrayList<User> findAll();
 
-    //getJustOneUser
-    @Query(value = "select * from desarolloweb.user where usar_name=?1", nativeQuery = true)
-    User findUserBy(String name);
-
     //Put
     @Modifying
     @Query(value = "update desarolloweb.user set password=?1 where usar_name=?2", nativeQuery = true)
-    int updateUser(String password, String username);
+    int updateUserPassword(String password, String username);
 
 
     //Post
     @Modifying
-    @Query(value = "insert into desarolloweb.user (usar_name, password) values (?1, ?2)", nativeQuery = true)
-    int createUser(String username, String password);
+    @Query(value = "insert into desarolloweb.user (usar_name, password, person_id) values (?1, ?2, ?3)", nativeQuery = true)
+    int createUser(String username, String password, Integer personId);
 
     //Delete
     @Modifying

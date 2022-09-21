@@ -9,6 +9,7 @@ import com.example.personmicroservice.repository.PersonRepository;
 import com.sun.istack.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 
 import javax.transaction.Transactional;
 import java.util.ArrayList;
@@ -66,4 +67,6 @@ public class PersonService {
     public int deletePerson(Integer id) {
        return personRepository.deletePersonBy(id);
     }
+
+
 }

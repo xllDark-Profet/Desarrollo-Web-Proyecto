@@ -20,7 +20,7 @@ public class Book {
     private String description;
     @Column
     @NotNull
-    private String editorial_id;
+    private Integer editorial_id;
     @Column
     @NotNull
     private String date_edition;
@@ -57,11 +57,11 @@ public class Book {
         this.description = description;
     }
 
-    public String getEditorial_id() {
+    public Integer getEditorial_id() {
         return editorial_id;
     }
 
-    public void setEditorial_id(String editorial_id) {
+    public void setEditorial_id(Integer editorial_id) {
         this.editorial_id = editorial_id;
     }
 

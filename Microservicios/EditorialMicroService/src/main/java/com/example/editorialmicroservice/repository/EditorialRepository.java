@@ -11,6 +11,9 @@ import java.util.ArrayList;
 
 @Controller
 public interface EditorialRepository extends JpaRepository<Editorial,Integer> {
+    //getAllIds
+    @Query(value = "SELECT id FROM desarolloweb.editorial", nativeQuery = true)
+    ArrayList<Integer> findAllId();
     //getAll
     @Query(value = "SELECT * FROM desarolloweb.editorial", nativeQuery = true)
     ArrayList<Editorial> findAll();

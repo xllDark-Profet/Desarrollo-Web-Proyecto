@@ -120,5 +120,11 @@ public class BookController {
         return retorno;
     }
 
+    //COMMUNICATION WITH EDITORIAL REPOSITORY
+    @GetMapping("/getUseId")
+    private ArrayList<Integer> getIdUse(){
+        return bookService.editorialIdUse();
+    }
+
 
 }

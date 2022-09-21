@@ -21,10 +21,10 @@ public class EditorialController {
     private String postNewEditorial(@RequestBody Editorial newEditorial) {
         String retorno = "";
         int auxiliar = editorialService.createEditorial(newEditorial);
-        if (auxiliar == 1) {
-            retorno = "Tu libro fue publicado";
+        if (auxiliar>0) {
+            retorno = "Tu editorial fue agregada exitosamente.";
         } else {
-            retorno = "No se pudo publicar el libro";
+            retorno = "Tu editorial no pudo ser agregada. Por favor verifica la información agregada.";
         }
         return retorno;
     }
@@ -47,10 +47,10 @@ public class EditorialController {
     private String putEditorial(@RequestBody Editorial updateEditorial) {
         String retorno = "";
         int auxiliar = editorialService.updateEditorial(updateEditorial);
-        if (auxiliar == 1) {
-            retorno = "Tu libro fue modificado";
+        if (auxiliar >0) {
+            retorno = "La editorial fue modificada con éxito";
         } else {
-            retorno = "No se pudo actualizar la informacion";
+            retorno = "No se pudo actualizar la información. Revisa los datos ingresados.";
         }
         return retorno;
     }
@@ -59,10 +59,10 @@ public class EditorialController {
     private String patchName(@RequestBody DTOChangeName dtoChangeName){
         String retorno = "";
         int auxiliar = editorialService.updateName(dtoChangeName);
-        if (auxiliar == 1) {
-            retorno = "El nombre de tu libro fue modificado";
+        if (auxiliar> 0) {
+            retorno = "El nombre de tu editorial fue modificada.";
         } else {
-            retorno = "No se pudo actualizar la informacion";
+            retorno = "No se pudo actualizar la información. Verifica la información enviada.";
         }
         return retorno;
     }
@@ -70,10 +70,10 @@ public class EditorialController {
     private String patchWebsite(@RequestBody DTOChangeWebSite dtoChangeWebSite){
         String retorno = "";
         int auxiliar = editorialService.updateWebSite(dtoChangeWebSite);
-        if (auxiliar == 1) {
-            retorno = "El website del libro fue modificado";
+        if (auxiliar >0) {
+            retorno = "El website de tu editorial fue modificado con éxito.";
         } else {
-            retorno = "No se pudo actualizar la informacion";
+            retorno = "No se pudo actualizar la información. Verifica la información enviada.";
         }
         return retorno;
     }
@@ -81,14 +81,23 @@ public class EditorialController {
     @DeleteMapping("/editorialDelete/{idEditorial}")
     private String deleteEditorial(@PathVariable("idEditorial") Integer id) {
         int auxiliar = editorialService.deleteEditorial(id);
-        //ACA VA IPC PARA SABER SI SE PUEDE ELIMINAR
         String retorno = "";
-        if (auxiliar == 1) {
+        if (auxiliar >0) {
             retorno = "Se elimino exitosamente";
         } else {
-            retorno = "No se elimino";
+            retorno = "No se eliminó la editorial. Verifica la información proporcionada o la existencia de libros asociados a la editorial";
         }
         return retorno;
     }
+
+
+    //Communication with BookService
+
+    //GET Id For BookService
+    @GetMapping("/idEditorial")
+    private ArrayList<Integer> getIdEditoriales(){
+        return  editorialService.getIdAllEditorial();
+    }
+
 
 }

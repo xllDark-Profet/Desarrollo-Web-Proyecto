@@ -19,10 +19,10 @@ public class UserController {
     private String postNewUser(@RequestBody User newUser) {
         String retorno = "";
         int auxiliar = userService.createUser(newUser);
-        if (auxiliar == 1) {
-            retorno = "Tu libro fue publicado";
+        if (auxiliar>0) {
+            retorno = "Tu usuario fue creado con éxito";
         } else {
-            retorno = "No se pudo publicar el libro";
+            retorno = "No se agregar el usuario.";
         }
         return retorno;
     }
@@ -45,8 +45,8 @@ public class UserController {
     private String putUser(@RequestBody User updateUser) {
         String retorno = "";
         int auxiliar = userService.updateUser(updateUser);
-        if (auxiliar == 1) {
-            retorno = "Tu libro fue modificado";
+        if (auxiliar>0) {
+            retorno = "Tu contrasena fue modificada";
         } else {
             retorno = "No se pudo actualizar la informacion";
         }
@@ -58,8 +58,8 @@ public class UserController {
     private String deleteUser(@PathVariable("idUser") String username) {
         int auxiliar = userService.deleteUser(username);
         String retorno = "";
-        if (auxiliar == 1) {
-            retorno = "Se elimino exitosamente";
+        if (auxiliar >0) {
+            retorno = "Se elimino exitosamente el usuario";
         } else {
             retorno = "No se elimino";
         }

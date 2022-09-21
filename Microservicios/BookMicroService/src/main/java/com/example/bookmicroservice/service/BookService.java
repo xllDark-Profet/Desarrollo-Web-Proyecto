@@ -4,6 +4,7 @@ import com.example.bookmicroservice.repository.BookRepository;
 import com.sun.istack.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 
 import javax.transaction.Transactional;
 import java.util.ArrayList;
@@ -17,7 +18,11 @@ public class BookService {
     @Transactional
     public int createBook(@NotNull @org.jetbrains.annotations.NotNull Book newBook) {
         int recibe = -10;
-        recibe = bookRepository.createBook(newBook.getName(), newBook.getDescription(), newBook.getEditorial_id(), newBook.getDate_edition(), newBook.getImage_url(), newBook.getQuantity());
+        Boolean result = false;
+        result = editorialExist(newBook.getEditorial_id());
+        if (result == true) {
+            recibe = bookRepository.createBook(newBook.getName(), newBook.getDescription(), newBook.getEditorial_id(), newBook.getDate_edition(), newBook.getImage_url(), newBook.getQuantity());
+        }
         return recibe;
     }
 
@@ -46,7 +51,11 @@ public class BookService {
     @Transactional
     public int updateBook(@NotNull @org.jetbrains.annotations.NotNull Book updateOne) {
         int recibe = -10;
-        recibe = bookRepository.updateBook(updateOne.getName(), updateOne.getDescription(), updateOne.getEditorial_id(), updateOne.getDate_edition(),updateOne.getImage_url(), updateOne.getQuantity(), updateOne.getId());
+        Boolean result = false;
+        result = editorialExist(updateOne.getEditorial_id());
+        if (result == true) {
+            recibe = bookRepository.updateBook(updateOne.getName(), updateOne.getDescription(), updateOne.getEditorial_id(), updateOne.getDate_edition(), updateOne.getImage_url(), updateOne.getQuantity(), updateOne.getId());
+        }
         return recibe;
     }
 
@@ -80,5 +89,30 @@ public class BookService {
         return recibe;
     }
 
+    //COMMUNICATION WITH EDITORIAL SERVICE
+
+
+    //COMMUNICATION BETWEEN SERVICES
+    //If there exist any editorial
+    public Boolean editorialExist(Integer idEditorial) {
+        Boolean result = false;
+        ArrayList<Integer> ids = new RestTemplate().getForObject("http://localhost:8082/editorials/idEditorial", ArrayList.class);
+        for (Integer inte : ids) {
+            if (inte == idEditorial) {
+                result = true;
+            }
+        }
+        return result;
+    }
+    //Id from editorial
+    public ArrayList<Integer>editorialIdUse(){
+        ArrayList<Integer> ids=new ArrayList<>();
+        for (Book books:getAllBooks()) {
+            if (!ids.contains(books.getEditorial_id())){
+                ids.add(books.getEditorial_id());
+            }
+        }
+        return ids;
+    }
 
 }

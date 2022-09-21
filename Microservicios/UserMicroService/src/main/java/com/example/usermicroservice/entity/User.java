@@ -16,6 +16,18 @@ public class User {
     @NotNull
     private String password;
 
+    @Column
+    @org.jetbrains.annotations.NotNull
+    private Integer person_id;
+
+    public Integer getPerson_id() {
+        return person_id;
+    }
+
+    public void setPerson_id(Integer person_id) {
+        this.person_id = person_id;
+    }
+
     public String getUsar_name() {
         return usar_name;
     }

@@ -14,7 +14,7 @@ public interface BookRepository extends JpaRepository<Book, Integer> {
     //Post
     @Modifying
     @Query(value = "insert into desarolloweb.book (name, description, editorial_id, date_edition, image_url, quantity) values (?1, ?2, ?3, ?4, ?5, ?6)", nativeQuery = true)
-    int createBook(String name, String description, String editorial, String fechaEdicion, String image_url, Integer quantity);
+    int createBook(String name, String description,Integer editorial, String fechaEdicion, String image_url, Integer quantity);
 
     //Get
     //getAllBooks
@@ -34,7 +34,7 @@ public interface BookRepository extends JpaRepository<Book, Integer> {
     //Put
     @Modifying
     @Query(value = "UPDATE desarolloweb.book SET name=?1, description=?2, editorial_id=?3, date_edition=?4, image_url=?5, quantity=?6 WHERE id=?7", nativeQuery = true)
-    int updateBook(String name, String description, String editorial, String date_edition ,String image_url, Integer quantity, Integer id);
+    int updateBook(String name, String description, Integer editorial, String date_edition ,String image_url, Integer quantity, Integer id);
 
     //Patch
     @Modifying

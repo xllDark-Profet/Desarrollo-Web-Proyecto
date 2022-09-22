@@ -6,6 +6,24 @@
   <component name="ChangeListManager">
     <list default="true" id="78af29c7-c174-44f4-9ae1-b5d9b1128af5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservicios/UserAuthorizationServicePrueba/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservicios/UserAuthorizationServicePrueba/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservicios/UserAuthorizationServicePrueba/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservicios/UserAuthorizationServicePrueba/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservicios/UserAuthorizationServicePrueba/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservicios/UserAuthorizationServicePrueba/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservicios/UserAuthorizationServicePrueba/src/main/java/com/example/userauthorizationmicroservice/UserAuthorizationMicroServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservicios/UserAuthorizationServicePrueba/src/main/java/com/example/userauthorizationmicroservice/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservicios/UserAuthorizationServicePrueba/src/main/java/com/example/userauthorizationmicroservice/entity/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservicios/UserAuthorizationServicePrueba/src/main/java/com/example/userauthorizationmicroservice/entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservicios/UserAuthorizationServicePrueba/src/main/java/com/example/userauthorizationmicroservice/filter/CustomAuthenticationFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservicios/UserAuthorizationServicePrueba/src/main/java/com/example/userauthorizationmicroservice/repository/RoleRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservicios/UserAuthorizationServicePrueba/src/main/java/com/example/userauthorizationmicroservice/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservicios/UserAuthorizationServicePrueba/src/main/java/com/example/userauthorizationmicroservice/security/JWTSecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservicios/UserAuthorizationServicePrueba/src/main/java/com/example/userauthorizationmicroservice/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservicios/UserAuthorizationServicePrueba/src/main/java/com/example/userauthorizationmicroservice/service/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservicios/UserAuthorizationServicePrueba/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservicios/UserAuthorizationServicePrueba/src/test/java/com/example/userauthorizationmicroservice/UserAuthorizationMicroServiceApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +98,7 @@
       <recent name="C:\Users\marir\OneDrive\Desktop\ingenieria\septimo\distri\NuevoProyecto\Desarrollo-Web-Proyecto\Microservicios" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.EditorialMicroServiceApplication">
+  <component name="RunManager" selected="Spring Boot.UserMicroServiceApplication">
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="APIGateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.apigateway.ApiGatewayApplication" />
@@ -143,7 +161,7 @@
       <workItem from="1663739234558" duration="8086000" />
       <workItem from="1663786472919" duration="431000" />
       <workItem from="1663797469486" duration="4415000" />
-      <workItem from="1663804790471" duration="308000" />
+      <workItem from="1663804790471" duration="1383000" />
     </task>
     <servers />
   </component>

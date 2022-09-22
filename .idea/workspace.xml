@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="78af29c7-c174-44f4-9ae1-b5d9b1128af5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservicios/EditorialMicroService/src/main/java/com/example/editorialmicroservice/repository/EditorialRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Microservicios/EditorialMicroService/src/main/java/com/example/editorialmicroservice/repository/EditorialRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +142,8 @@
       <workItem from="1663722853143" duration="82000" />
       <workItem from="1663739234558" duration="8086000" />
       <workItem from="1663786472919" duration="431000" />
-      <workItem from="1663797469486" duration="4041000" />
+      <workItem from="1663797469486" duration="4415000" />
+      <workItem from="1663804790471" duration="308000" />
     </task>
     <servers />
   </component>

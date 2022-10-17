@@ -2,19 +2,32 @@ package com.example.usermicroservice.entity;
 
 
 import com.sun.istack.NotNull;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.Collection;
 
 @Table
 @Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+
 public class User {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column
     @NotNull
     private String usar_name;
     @Column
     @NotNull
     private String password;
+
+    @ManyToMany(fetch = FetchType.EAGER)
+    private Collection<Role> roles = new ArrayList<>();
 
     @Column
     @org.jetbrains.annotations.NotNull

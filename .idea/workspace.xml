@@ -5,23 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78af29c7-c174-44f4-9ae1-b5d9b1128af5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Microservicios/UserMicroService/src/main/java/com/example/usermicroservice/entity/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservicios/BookMicroService/src/main/java/com/example/bookmicroservice/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Microservicios/BookMicroService/src/main/java/com/example/bookmicroservice/controller/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservicios/BookMicroService/src/main/java/com/example/bookmicroservice/entity/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/Microservicios/BookMicroService/src/main/java/com/example/bookmicroservice/entity/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservicios/BookMicroService/src/main/java/com/example/bookmicroservice/repository/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Microservicios/BookMicroService/src/main/java/com/example/bookmicroservice/repository/BookRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservicios/BookMicroService/src/main/java/com/example/bookmicroservice/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Microservicios/BookMicroService/src/main/java/com/example/bookmicroservice/service/BookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservicios/BookMicroService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Microservicios/BookMicroService/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservicios/EditorialMicroService/src/main/java/com/example/editorialmicroservice/controller/EditorialController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Microservicios/EditorialMicroService/src/main/java/com/example/editorialmicroservice/controller/EditorialController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservicios/EditorialMicroService/src/main/java/com/example/editorialmicroservice/repository/EditorialRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Microservicios/EditorialMicroService/src/main/java/com/example/editorialmicroservice/repository/EditorialRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservicios/EditorialMicroService/src/main/java/com/example/editorialmicroservice/service/EditorialService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Microservicios/EditorialMicroService/src/main/java/com/example/editorialmicroservice/service/EditorialService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservicios/EditorialMicroService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Microservicios/EditorialMicroService/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservicios/PersonMicroService/src/main/java/com/example/personmicroservice/service/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Microservicios/PersonMicroService/src/main/java/com/example/personmicroservice/service/PersonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservicios/PersonMicroService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Microservicios/PersonMicroService/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservicios/UserMicroService/src/main/java/com/example/usermicroservice/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Microservicios/UserMicroService/src/main/java/com/example/usermicroservice/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservicios/UserMicroService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Microservicios/UserMicroService/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Microservicios/UserMicroService/src/main/java/com/example/usermicroservice/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Microservicios/UserMicroService/src/main/java/com/example/usermicroservice/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservicios/UserMicroService/src/main/java/com/example/usermicroservice/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Microservicios/UserMicroService/src/main/java/com/example/usermicroservice/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservicios/UserMicroService/src/main/java/com/example/usermicroservice/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Microservicios/UserMicroService/src/main/java/com/example/usermicroservice/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservicios/UserMicroService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Microservicios/UserMicroService/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +28,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Microservicios/UserMicroService/src/main/resources/application.properties" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
@@ -57,13 +51,6 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="2EsSnqhFJWlkutQfKvGiCyeDXa7" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -72,26 +59,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "C:/Users/marir/OneDrive/Desktop/ingenieria/septimo/distri/NuevoProyecto/Desarrollo-Web-Proyecto",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "spring.configuration.checksum": "2895c8974e289c6c76190481e9c8be7f"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="jdk.selected.JAVA_MODULE" value="17" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\anrip\Desktop\CodingUniversidad\8vo Semestre\Desarrollo Web\Proyecto\Desarrollo-Web-Proyecto\Microservicios" />
       <recent name="C:\Users\marir\OneDrive\Desktop\ingenieria\septimo\distri\NuevoProyecto\Desarrollo-Web-Proyecto\Microservicios\APIGateway" />
       <recent name="C:\Users\marir\OneDrive\Desktop\ingenieria\septimo\distri\NuevoProyecto\Desarrollo-Web-Proyecto\Microservicios" />
     </key>
@@ -107,6 +98,13 @@
     <configuration name="BookServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="BookService" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.bookmicroservice.BookServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -157,6 +155,10 @@
       <workItem from="1663714668817" duration="15000" />
       <workItem from="1663722853143" duration="82000" />
       <workItem from="1663739234558" duration="7901000" />
+      <workItem from="1663759853657" duration="2615000" />
+      <workItem from="1663783179311" duration="2236000" />
+      <workItem from="1665963176638" duration="3229000" />
+      <workItem from="1665982018904" duration="2120000" />
     </task>
     <servers />
   </component>
@@ -173,6 +175,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

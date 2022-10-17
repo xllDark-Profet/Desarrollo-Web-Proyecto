@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/DiscoveryServer/pom.xml" />
         <option value="$PROJECT_DIR$/APIGateway/pom.xml" />
         <option value="$PROJECT_DIR$/Microservicios/APIGateway/pom.xml" />
+        <option value="$PROJECT_DIR$/UserMicroServiceAuthorization/pom.xml" />
       </list>
     </option>
   </component>

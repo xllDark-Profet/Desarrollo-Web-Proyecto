@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/Microservicios/EditorialMicroService/EditorialMicroService.iml" filepath="$PROJECT_DIR$/Microservicios/EditorialMicroService/EditorialMicroService.iml" />
       <module fileurl="file://$PROJECT_DIR$/Microservicios/PersonMicroService/PersonService.iml" filepath="$PROJECT_DIR$/Microservicios/PersonMicroService/PersonService.iml" />
       <module fileurl="file://$PROJECT_DIR$/Microservicios/UserMicroService/UserMicroService.iml" filepath="$PROJECT_DIR$/Microservicios/UserMicroService/UserMicroService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Microservicios/UserMicroServiceAuthorization/UserMicroServiceAuthorization.iml" filepath="$PROJECT_DIR$/Microservicios/UserMicroServiceAuthorization/UserMicroServiceAuthorization.iml" />
     </modules>
   </component>
 </project>

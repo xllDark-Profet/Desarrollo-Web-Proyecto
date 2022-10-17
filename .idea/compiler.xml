@@ -2,25 +2,34 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="BookService" />
         <module name="DiscoveryServer" />
+        <module name="PersonService" />
+        <module name="BookService" />
         <module name="APIGateway" />
         <module name="EditorialMicroService" />
-        <module name="PersonService" />
         <module name="UserMicroService" />
+      </profile>
+      <profile name="Annotation profile for UserMicroServiceAuthorization" enabled="true">
+        <sourceOutputDir name="../../UserMicroServiceAuthorization/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../../UserMicroServiceAuthorization/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="UserMicroServiceAuthorization" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="APIGateway" target="11" />
       <module name="BookService" target="11" />
+      <module name="demo" target="17" />
       <module name="DiscoveryServer" target="11" />
       <module name="EditorialMicroService" target="11" />
       <module name="PersonService" target="11" />
       <module name="UserMicroService" target="11" />
+      <module name="UserMicroServiceAuthorization" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -31,6 +40,8 @@
       <module name="EditorialMicroService" options="-parameters" />
       <module name="PersonService" options="-parameters" />
       <module name="UserMicroService" options="-parameters" />
+      <module name="UserMicroServiceAuthorization" options="-parameters" />
+      <module name="demo" options="-parameters" />
     </option>
   </component>
 </project>

@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Microservicios/APIGateway/APIGateway.iml" filepath="$PROJECT_DIR$/Microservicios/APIGateway/APIGateway.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Microservicios/BookMicroService/BookService.iml" filepath="$PROJECT_DIR$/Microservicios/BookMicroService/BookService.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/Desarrollo-Web-Proyecto.iml" filepath="$PROJECT_DIR$/.idea/Desarrollo-Web-Proyecto.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Microservicios/DiscoveryServer/DiscoveryServer.iml" filepath="$PROJECT_DIR$/Microservicios/DiscoveryServer/DiscoveryServer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Microservicios/EditorialMicroService/EditorialMicroService.iml" filepath="$PROJECT_DIR$/Microservicios/EditorialMicroService/EditorialMicroService.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Microservicios/PersonMicroService/PersonService.iml" filepath="$PROJECT_DIR$/Microservicios/PersonMicroService/PersonService.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Microservicios/UserMicroService/UserMicroService.iml" filepath="$PROJECT_DIR$/Microservicios/UserMicroService/UserMicroService.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Microservicios/UserMicroServiceAuthorization/UserMicroServiceAuthorization.iml" filepath="$PROJECT_DIR$/Microservicios/UserMicroServiceAuthorization/UserMicroServiceAuthorization.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BACKEND/APIGateway/APIGateway.iml" filepath="$PROJECT_DIR$/BACKEND/APIGateway/APIGateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BACKEND/APIGateway/src/main/main.iml" filepath="$PROJECT_DIR$/BACKEND/APIGateway/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BACKEND/APIGateway/src/test/test.iml" filepath="$PROJECT_DIR$/BACKEND/APIGateway/src/test/test.iml" />
     </modules>
   </component>
 </project>

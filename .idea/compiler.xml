@@ -7,18 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="DiscoveryServer" />
-        <module name="PersonService" />
-        <module name="BookService" />
         <module name="APIGateway" />
-        <module name="EditorialMicroService" />
-        <module name="UserMicroService" />
-      </profile>
-      <profile name="Annotation profile for UserMicroServiceAuthorization" enabled="true">
-        <sourceOutputDir name="../../UserMicroServiceAuthorization/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../../UserMicroServiceAuthorization/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="UserMicroServiceAuthorization" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

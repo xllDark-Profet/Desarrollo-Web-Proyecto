@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/APIGateway/APIGateway.iml" filepath="$PROJECT_DIR$/APIGateway/APIGateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AuthenticationMicroservice/AuthenticationMicroservice.iml" filepath="$PROJECT_DIR$/AuthenticationMicroservice/AuthenticationMicroservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/BACKEND.iml" filepath="$PROJECT_DIR$/.idea/BACKEND.iml" />
     </modules>
   </component>

@@ -5,14 +5,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78af29c7-c174-44f4-9ae1-b5d9b1128af5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Microservicios/UserMicroService/src/main/java/com/example/usermicroservice/entity/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Microservicios/AuthenticationMicroservice/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Microservicios/AuthenticationMicroservice/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Microservicios/AuthenticationMicroservice/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Microservicios/AuthenticationMicroservice/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Microservicios/AuthenticationMicroservice/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Microservicios/AuthenticationMicroservice/src/main/java/com/example/authenticationmicroservice/MainSecurity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Microservicios/AuthenticationMicroservice/src/main/java/com/example/authenticationmicroservice/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Microservicios/AuthenticationMicroservice/src/main/java/com/example/authenticationmicroservice/dto/JWTDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Microservicios/AuthenticationMicroservice/src/main/java/com/example/authenticationmicroservice/dto/LoginUserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Microservicios/AuthenticationMicroservice/src/main/java/com/example/authenticationmicroservice/dto/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Microservicios/AuthenticationMicroservice/src/main/java/com/example/authenticationmicroservice/dto/NewUserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Microservicios/AuthenticationMicroservice/src/main/java/com/example/authenticationmicroservice/entity/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Microservicios/AuthenticationMicroservice/src/main/java/com/example/authenticationmicroservice/entity/Rol.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Microservicios/AuthenticationMicroservice/src/main/java/com/example/authenticationmicroservice/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Microservicios/AuthenticationMicroservice/src/main/java/com/example/authenticationmicroservice/enums/RolNombre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Microservicios/AuthenticationMicroservice/src/main/java/com/example/authenticationmicroservice/jwt/JWTEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Microservicios/AuthenticationMicroservice/src/main/java/com/example/authenticationmicroservice/jwt/JWTFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Microservicios/AuthenticationMicroservice/src/main/java/com/example/authenticationmicroservice/jwt/JWTProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Microservicios/AuthenticationMicroservice/src/main/java/com/example/authenticationmicroservice/repository/RolRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Microservicios/AuthenticationMicroservice/src/main/java/com/example/authenticationmicroservice/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Microservicios/AuthenticationMicroservice/src/main/java/com/example/authenticationmicroservice/service/RolService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Microservicios/AuthenticationMicroservice/src/main/java/com/example/authenticationmicroservice/service/UserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Microservicios/AuthenticationMicroservice/src/main/java/com/example/authenticationmicroservice/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Microservicios/AuthenticationMicroservice/src/main/java/com/example/authenticationmicroservice/util/CreateRoles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Microservicios/AuthenticationMicroservice/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Microservicios/AuthenticationMicroservice/src/test/java/com/example/authenticationmicroservice/AuthenticationMicroserviceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Microservicios/BookMicroService/src/main/java/com/example/bookmicroservice/BookMicroserviceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Microservicios/BookMicroService/src/main/java/com/example/bookmicroservice/DTO/BookDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Microservicios/BookMicroService/src/main/java/com/example/bookmicroservice/DTO/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Microservicios/BookMicroService/src/test/java/com/example/bookmicroservice/BookMicroserviceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Microservicios/EditorialMicroService/src/main/java/com/example/editorialmicroservice/DTO/EditorialDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Microservicios/EditorialMicroService/src/main/java/com/example/editorialmicroservice/DTO/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Microservicios/EditorialMicroService/src/main/java/com/example/editorialmicroservice/entity/IdContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Desarrollo-Web-Proyecto.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Desarrollo-Web-Proyecto.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservicios/UserMicroService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Microservicios/UserMicroService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservicios/UserMicroService/src/main/java/com/example/usermicroservice/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Microservicios/UserMicroService/src/main/java/com/example/usermicroservice/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservicios/APIGateway/APIGateway.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Microservicios/APIGateway/APIGateway.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservicios/APIGateway/target/classes/com/example/apigateway/ApiGatewayApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/Microservicios/APIGateway/target/classes/com/example/apigateway/ApiGatewayApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservicios/DiscoveryServer/target/classes/com/example/discoveryserver/DiscoveryServerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/Microservicios/DiscoveryServer/target/classes/com/example/discoveryserver/DiscoveryServerApplication.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,24 +89,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "C:/Users/marir/Desktop/pruebaAutorizacion",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "spring.configuration.checksum": "2895c8974e289c6c76190481e9c8be7f"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="jdk.selected.JAVA_MODULE" value="17" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Microservicios/AuthenticationMicroservice" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\anrip\Desktop\CodingUniversidad\8vo Semestre\Desarrollo Web\Proyecto\Desarrollo-Web-Proyecto\Microservicios" />
@@ -151,10 +184,14 @@
       <workItem from="1663714371852" duration="279000" />
       <workItem from="1663714668817" duration="15000" />
       <workItem from="1663722853143" duration="82000" />
-      <workItem from="1663739234558" duration="8086000" />
-      <workItem from="1663786472919" duration="431000" />
-      <workItem from="1663797469486" duration="4415000" />
-      <workItem from="1663804790471" duration="3984000" />
+      <workItem from="1663739234558" duration="7901000" />
+      <workItem from="1663759853657" duration="2615000" />
+      <workItem from="1663783179311" duration="2236000" />
+      <workItem from="1665963176638" duration="3229000" />
+      <workItem from="1665982018904" duration="2146000" />
+      <workItem from="1666052514694" duration="1175000" />
+      <workItem from="1666088508261" duration="124000" />
+      <workItem from="1666088674792" duration="3313000" />
     </task>
     <servers />
   </component>

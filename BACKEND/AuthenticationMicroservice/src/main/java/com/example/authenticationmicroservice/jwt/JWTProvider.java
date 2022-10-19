@@ -22,8 +22,8 @@ public class JWTProvider {
 
     public String generateToken(Authentication authentication){
         Person person  = (Person) authentication.getPrincipal();
-        return Jwts.builder().setSubject(person.getUsername())
-                .setExpiration(new Date(new Date().getTime() + expiration * 1000))
+        return Jwts.builder().setSubject(person.getUsername()).setIssuedAt(new Date())
+                .setExpiration(new Date(new Date().getTime() + expiration * 6000))
                 .signWith(SignatureAlgorithm.HS512, secret)
                 .compact();
     }

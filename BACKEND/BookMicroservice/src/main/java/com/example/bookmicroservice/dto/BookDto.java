@@ -20,11 +20,11 @@ public class BookDto {
     @NotBlank
     private String image_url;
 
-    @Min(0)
+    @NotBlank
     private int quantity;
 
 
-    public BookDto(@NotBlank String name, @NotBlank String description, @NotBlank int editorial_id, @NotBlank String date_edition, @NotBlank String image_url, @Min(0) int quantity) {
+    public BookDto(@NotBlank String name, @NotBlank String description, @NotBlank int editorial_id, @NotBlank String date_edition, @NotBlank String image_url, @NotBlank int quantity) {
         this.name = name;
         this.description = description;
         this.editorial_id = editorial_id;

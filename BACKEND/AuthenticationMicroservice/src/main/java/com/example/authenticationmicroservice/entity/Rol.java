@@ -1,9 +1,8 @@
 package com.example.authenticationmicroservice.entity;
 
 import com.example.authenticationmicroservice.enums.RolNombre;
-import com.sun.istack.NotNull;
-
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 
 @Entity
 public class Rol {

@@ -9,7 +9,6 @@ import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -17,9 +16,10 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/book")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "http://localhost:4200")
 
 public class BookController {
+
     @Autowired
     BookService bookService;
 
@@ -45,13 +45,10 @@ public class BookController {
         return new ResponseEntity(book, HttpStatus.OK);
     }
 
-    @PreAuthorize("hasRole('ADMIN')")
     @PostMapping("/create-book")
     public ResponseEntity<?> create(@RequestBody BookDto bookDto){
         if(StringUtils.isBlank(bookDto.getName()))
             return new ResponseEntity(new Message("Ingresa un nombre"), HttpStatus.BAD_REQUEST);
-        if(bookDto.getQuantity()==0 || bookDto.getQuantity()<0 )
-            return new ResponseEntity(new Message("La cantidad debe ser mayor a 0"), HttpStatus.BAD_REQUEST);
         if(bookService.existsByName(bookDto.getName()))
             return new ResponseEntity(new Message("El nombre ya existe"), HttpStatus.BAD_REQUEST);
         Book book = new Book(bookDto.getName(), bookDto.getDescription(), bookDto.getEditorial_id(), bookDto.getDate_edition(), bookDto.getImage_url(), bookDto.getQuantity());
@@ -59,7 +56,6 @@ public class BookController {
         return new ResponseEntity(new Message("Libro creado"), HttpStatus.OK);
     }
 
-    @PreAuthorize("hasRole('ADMIN')")
     @PutMapping("/update-book/{id}")
     public ResponseEntity<?> update(@PathVariable("id")int id, @RequestBody BookDto bookDto){
         if(!bookService.existsById(id))
@@ -68,8 +64,6 @@ public class BookController {
             return new ResponseEntity(new Message("El nombre ya existe"), HttpStatus.BAD_REQUEST);
         if(StringUtils.isBlank(bookDto.getName()))
             return new ResponseEntity(new Message("Ingrese el nombre"), HttpStatus.BAD_REQUEST);
-        if(bookDto.getQuantity()==0 || bookDto.getQuantity()<0 )
-            return new ResponseEntity(new Message("La cantidad debe ser mayor a 0"), HttpStatus.BAD_REQUEST);
 
         Book book = bookService.getOne(id).get();
         book.setName(bookDto.getName());
@@ -82,7 +76,6 @@ public class BookController {
         return new ResponseEntity(new Message("Libro actualizado"), HttpStatus.OK);
     }
 
-    @PreAuthorize("hasRole('ADMIN')")
     @DeleteMapping("/delete-book/{id}")
     public ResponseEntity<?> delete(@PathVariable("id")int id){
         if(!bookService.existsById(id))

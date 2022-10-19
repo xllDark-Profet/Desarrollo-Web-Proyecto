@@ -1,6 +1,5 @@
 package com.example.authenticationmicroservice.entity;
 
-import com.sun.istack.NotNull;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -68,6 +67,14 @@ public class Person implements UserDetails {
     @Override
     public boolean isEnabled() {
         return false;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getBirth() {
+        return birth;
     }
 
 }

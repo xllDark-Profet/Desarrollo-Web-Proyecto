@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.2/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body class="p-3 m-0 border-0 bd-example">
+    <!-- Example Code -->
+
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.2/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body class="p-3 m-0 border-0 bd-example">
+    <!-- Example Code -->
+
+    <div class="row center-h center-v">
+      <div class="child col-sm-2" *ngFor="let book of books">
+        <div class="card text-bg-danger mb-2 border-dark mb-3" style="max-width: 15rem">
+          <img
+            class="card-img-top"
+            src="{{book.image_url}}"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">{{book.name}}</h5>
+            <p class="card-text">{{book.description}}</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Editorial: {{book.editorial_id}}</li>
+            <li class="list-group-item">Fecha de edicion: {{book.date_edition}}</li>
+            <li class="list-group-item">Cantidad: {{book.quantify}}</li>
+          </ul>
+          <div class="card-body">
+            <a>
+                <button class=" btn btn-success" routerLink="/book-detail/{{book.id}}">Detalles</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="Paginacion position-relative">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination position-absolute top-100 start-50 translate-middle">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">«</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">»</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+      </div>
+    </div>
+
+    <!-- End Example Code -->
+  </body>
+</html>
+
+  </body>
+</html>

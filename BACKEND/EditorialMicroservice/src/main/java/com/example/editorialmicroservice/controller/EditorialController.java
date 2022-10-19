@@ -45,7 +45,6 @@ public class EditorialController {
         return new ResponseEntity(editorial, HttpStatus.OK);
     }
 
-    @PreAuthorize("hasRole('ADMIN')")
     @PostMapping("/create-editorial")
     public ResponseEntity<?> create(@RequestBody EditorialDto editorialDto){
         if(StringUtils.isBlank(editorialDto.getName()))
@@ -57,7 +56,6 @@ public class EditorialController {
         return new ResponseEntity(new Message("Editorial creada"), HttpStatus.OK);
     }
 
-    @PreAuthorize("hasRole('ADMIN')")
     @PutMapping("/update-editorial/{id}")
     public ResponseEntity<?> update(@PathVariable("id")int id, @RequestBody EditorialDto editorialDto){
         if(!editorialService.existsById(id))
@@ -75,7 +73,6 @@ public class EditorialController {
         return new ResponseEntity(new Message("Editorial actualizada"), HttpStatus.OK);
     }
 
-    @PreAuthorize("hasRole('ADMIN')")
     @DeleteMapping("/delete-editorial/{id}")
     public ResponseEntity<?> delete(@PathVariable("id")int id){
         if(!editorialService.existsById(id))

@@ -47,7 +47,7 @@ public class AuthController {
     @Autowired
     JWTProvider jwtProvider;
 
-    @PostMapping("/newUser")
+    @PostMapping("/new-user")
     public ResponseEntity<?> newUser(@Valid @RequestBody NewUserDto newUserDto, BindingResult bindingResult){
         if(bindingResult.hasErrors()){
             return new ResponseEntity(new Message("Campos mal ingreados"), HttpStatus.BAD_REQUEST);
@@ -56,7 +56,8 @@ public class AuthController {
             return new ResponseEntity(new Message("El nombre de usuario ya existe"), HttpStatus.BAD_REQUEST);
         }
 
-        User user = new User(newUserDto.getName(), newUserDto.getUserName(), newUserDto.getPassword(), newUserDto.getBirth());
+        User user = new User(newUserDto.getName(), newUserDto.getUserName(),
+                passwordEncoder.encode(newUserDto.getPassword()), newUserDto.getBirth());
 
         Set<Rol> roles = new HashSet<>();
         roles.add(rolService.getByRolNombre(RolNombre.ROLE_USER).get());
@@ -69,12 +70,12 @@ public class AuthController {
         return new ResponseEntity(new Message("Usuario guardado"), HttpStatus.CREATED);
     }
 
-    @PostMapping("/login")
+    @PostMapping("/login-user")
     public ResponseEntity<JWTDto> login(@Valid @RequestBody LoginUserDto loginUserDto, BindingResult bindingResult){
         if(bindingResult.hasErrors()){
             return new ResponseEntity(new Message("Campos mal ingresados"), HttpStatus.BAD_REQUEST);
         }
-        Authentication authentication = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(loginUserDto.getUserName(), loginUserDto.getPassword()));
+        Authentication authentication = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(loginUserDto.getUserName(), passwordEncoder.matches(loginUserDto.getPassword(), passwordEncoder.encode(loginUserDto.getPassword()))));
         SecurityContextHolder.getContext().setAuthentication(authentication);
         String jwt = jwtProvider.generateToken(authentication);
         UserDetails userDetails = (UserDetails) authentication.getPrincipal();

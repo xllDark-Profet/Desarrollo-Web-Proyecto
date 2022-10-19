@@ -18,6 +18,10 @@ import { NuevoBookComponent } from './book/nuevo-book/nuevo-book.component';
 import { EditarBookComponent } from './book/editar-book/editar-book.component';
 import { ListaEditorialComponent } from './editorial/lista-editorial/lista-editorial.component';
 import { DetalleEditorialComponent } from './editorial/detalle-editorial/detalle-editorial.component';
+import { LoginComponent } from './auth/login/login.component';
+import { RegistroComponent } from './auth/registro/registro.component';
+import { MenuComponent } from './menu/menu.component';
+import { IndexComponent } from './index/index.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +32,10 @@ import { DetalleEditorialComponent } from './editorial/detalle-editorial/detalle
     EditarBookComponent,
     ListaEditorialComponent,
     DetalleEditorialComponent,
+    LoginComponent,
+    RegistroComponent,
+    MenuComponent,
+    IndexComponent,
   ],
   imports: [
     BrowserModule,

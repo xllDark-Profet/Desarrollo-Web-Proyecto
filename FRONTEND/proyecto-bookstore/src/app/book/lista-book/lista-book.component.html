@@ -1,0 +1,23 @@
+<div class="container mt-4">
+  <div class="row">
+    <div *ngFor="let book of books" class="col-md-3 mb-4">
+      <div class="card h-100">
+        <img class="card-img-top" src="{{book.imagen_url}}" alt="Card image cap" />
+        <div class="card-body">
+          <h5 class="card-title">{{book.nombre}}</h5>
+          <p class="card-text">{{book.descripcion}}</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Editorial: {{book.editorial_id}}</li>
+          <li class="list-group-item">Fecha de edicion: {{book.dia_edicion}}</li>
+          <li class="list-group-item">Cantidad: {{book.cantidad}}</li>
+        </ul>
+        <div class="card-body">
+          <a>
+            <button class=" btn btn-success" routerLink="/detail/{{book.id}}">Detalles</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

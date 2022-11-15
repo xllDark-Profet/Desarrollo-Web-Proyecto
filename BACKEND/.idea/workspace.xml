@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="04c755b5-fd43-480b-b2b9-a7cec51e15f5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APIGateway/src/main/java/com/example/apigateway/ApiGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/APIGateway/src/main/java/com/example/apigateway/ApiGatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APIGateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/APIGateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthenticationMicroservice/src/main/java/com/example/authenticationmicroservice/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthenticationMicroservice/src/main/java/com/example/authenticationmicroservice/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthenticationMicroservice/src/main/java/com/example/authenticationmicroservice/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthenticationMicroservice/src/main/java/com/example/authenticationmicroservice/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthenticationMicroservice/src/main/java/com/example/authenticationmicroservice/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthenticationMicroservice/src/main/java/com/example/authenticationmicroservice/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookMicroservice/src/main/java/com/example/bookmicroservice/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookMicroservice/src/main/java/com/example/bookmicroservice/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookMicroservice/src/main/java/com/example/bookmicroservice/dto/BookDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookMicroservice/src/main/java/com/example/bookmicroservice/dto/BookDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookMicroservice/src/main/java/com/example/bookmicroservice/entity/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookMicroservice/src/main/java/com/example/bookmicroservice/entity/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookMicroservice/src/main/java/com/example/bookmicroservice/repository/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookMicroservice/src/main/java/com/example/bookmicroservice/repository/BookRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookMicroservice/src/main/java/com/example/bookmicroservice/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookMicroservice/src/main/java/com/example/bookmicroservice/service/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookMicroservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/BookMicroservice/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EditorialMicroservice/src/main/java/com/example/editorialmicroservice/controller/EditorialController.java" beforeDir="false" afterPath="$PROJECT_DIR$/EditorialMicroservice/src/main/java/com/example/editorialmicroservice/controller/EditorialController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/auth/login/login.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/auth/login/login.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/auth/login/login.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/auth/login/login.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/auth/registro/registro.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/auth/registro/registro.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/auth/registro/registro.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/auth/registro/registro.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/book/detalle-book/detalle-book.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/book/detalle-book/detalle-book.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/book/detalle-book/detalle-book.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/book/detalle-book/detalle-book.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/book/editar-book/editar-book.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/book/editar-book/editar-book.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/book/editar-book/editar-book.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/book/editar-book/editar-book.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/book/lista-book/lista-book.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/book/lista-book/lista-book.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/book/lista-book/lista-book.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/book/lista-book/lista-book.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/book/nuevo-book/nuevo-book.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/book/nuevo-book/nuevo-book.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/book/nuevo-book/nuevo-book.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/book/nuevo-book/nuevo-book.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/guards/book-guard.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/guards/book-guard.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/index/index.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/index/index.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/index/index.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/index/index.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/interceptors/book-interceptors.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/interceptors/book-interceptors.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/menu/menu.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/menu/menu.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/menu/menu.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/menu/menu.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/models/book.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/models/book.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/models/jwt-dto.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/models/jwt-dto.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/models/login-user.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/models/login-user.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/models/new-user.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/models/new-user.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/service/auth.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/service/auth.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/service/book.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/service/book.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/service/token.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/service/token.service.ts" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2GIuU05b52trTak3cWjR4ngDon6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/anrip/Desktop/CodingUniversidad/8vo Semestre/Desarrollo Web/Ejemplos/CRUD BASICO/crudBACK-master&quot;
+  }
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="APIGateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.apigateway.ApiGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthenticationMicroserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="AuthenticationMicroservice" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.authenticationmicroservice.AuthenticationMicroserviceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookMicroserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="BookMicroservice" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.bookmicroservice.BookMicroserviceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiscoveryServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="DiscoveryServer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.discoveryserver.DiscoveryServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EditorialMicroserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="EditorialMicroservice" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.editorialmicroservice.EditorialMicroserviceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="04c755b5-fd43-480b-b2b9-a7cec51e15f5" name="Changes" comment="" />
+      <created>1666088430685</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666088430685</updated>
+      <workItem from="1666088432632" duration="69000" />
+      <workItem from="1666092224878" duration="25000" />
+      <workItem from="1666093017578" duration="126000" />
+      <workItem from="1666093341095" duration="39000" />
+      <workItem from="1666093447138" duration="162000" />
+      <workItem from="1666093665818" duration="15000" />
+      <workItem from="1666206012779" duration="749000" />
+      <workItem from="1666206772605" duration="11519000" />
+      <workItem from="1666223116377" duration="2142000" />
+      <workItem from="1666295409435" duration="79000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

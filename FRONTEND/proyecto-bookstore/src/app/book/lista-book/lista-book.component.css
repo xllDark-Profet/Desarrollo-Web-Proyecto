@@ -1,0 +1,27 @@
+.row {
+    
+    margin: 0 0 1rem;
+    height: 10rem;
+    display: flex;
+    /* align-items por defecto tiene el valor `stretch` */
+    align-items: start;
+}
+
+
+.center-h {
+    justify-content: center;
+  }
+.center-v {
+    align-items: center;
+  }
+
+.child {
+    
+    padding: .2rem;
+  }
+
+.card {
+    
+    padding: .2rem;
+}
+

@@ -1,0 +1,39 @@
+<div class="container" *ngIf="book">
+    <div class="row mt-5">
+        <div class="col-md-4 mx-auto">
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre"
+                    [(ngModel)]="book.nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcion">Descripcion</label>
+                    <input type="text" class="form-control" id="descripcion" name="descripcion"
+                    [(ngModel)]="book.descripcion" required>
+                </div>
+                <div class="form-group">
+                    <label for="cantidad">Cantidad</label>
+                    <input type="number" class="form-control" id="cantidad" name="cantidad"
+                    [(ngModel)]="book.cantidad" required>
+                </div>
+                <div class="form-group">
+                    <label for="editorial_id">Editorial</label>
+                    <input type="number" class="form-control" id="editorial_id" name="editorial_id"
+                    [(ngModel)]="book.editorial_id" required>
+                </div>
+                <div class="form-group">
+                    <label for="imagen_url">URL de la imagen</label>
+                    <input type="text" class="form-control" id="imagen_url" name="imagen_url"
+                    [(ngModel)]="book.imagen_url" required>
+                </div>
+                <div class="form-group">
+                    <label for="dia_edicion">Dia de edicion</label>
+                    <input type="text" class="form-control" id="dia_edicion" name="dia_edicion"
+                    [(ngModel)]="book.dia_edicion" required>
+                </div>
+                <button class="btn btn-outline-success btn-block" [disabled]="!f.valid">Actualizar</button>
+            </form>
+        </div>
+    </div>
+</div>

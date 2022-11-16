@@ -5,6 +5,9 @@ import { EditarBookComponent } from './book/editar-book/editar-book.component';
 import { ListaBookComponent } from './book/lista-book/lista-book.component';
 import { NuevoBookComponent } from './book/nuevo-book/nuevo-book.component';
 import { CrudTableBookComponent } from './book/crud-table-book/crud-table-book.component';
+import { CrudTableEditorialComponent } from './editorial/crud-table-editorial/crud-table-editorial.component';
+import { NuevaEditorialComponent } from './editorial/nueva-editorial/nueva-editorial.component';
+import { EditarEditorialComponent } from './editorial/editar-editorial/editar-editorial.component';
 
 const routes: Routes = [
   {path: '', component: ListaBookComponent},
@@ -12,6 +15,9 @@ const routes: Routes = [
   {path: 'create-book', component: NuevoBookComponent},
   {path: 'update-book/:id', component: EditarBookComponent},
   {path: 'book-table', component: CrudTableBookComponent},
+  {path: 'editorial-table', component: CrudTableEditorialComponent},
+  {path: 'create-editorial', component: NuevaEditorialComponent},
+  {path: 'update-editorial/:id', component: EditarEditorialComponent},
   {path: '**', redirectTo: '', pathMatch: 'full'},
   
 ];

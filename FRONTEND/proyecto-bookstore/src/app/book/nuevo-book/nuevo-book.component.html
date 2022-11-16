@@ -9,7 +9,8 @@
                 </div>
                 <div class="form-group">
                     <label for="descripcion">Descripcion</label>
-                    <textarea class="form-control" id="descripcion" rows="3" id="descripcion" name="descripcion" [(ngModel)]="descripcion" required></textarea>
+                    <textarea class="form-control" id="descripcion" rows="3" id="descripcion" name="descripcion" 
+                    [(ngModel)]="descripcion" required></textarea>
                 </div>
                 <div class="form-group">
                     <label for="cantidad">Cantidad</label>
@@ -17,9 +18,11 @@
                     [(ngModel)]="cantidad" required>
                 </div>
                 <div class="form-group">
-                    <label for="editorial_id">Editorial</label>
-                    <input type="number" class="form-control" id="editorial_id" name="editorial_id"
-                    [(ngModel)]="editorial_id" required>
+                    <label for="editorial">Editorial:</label>
+                    <select class="form-control" name="marcaElegida" id="marcaElegida" [(ngModel)]="editorial" required>
+                        <option [ngValue]="null" selected>Elige una Editorial</option>
+                        <option [ngValue]="editorial.nombre" *ngFor="let editorial of editorials">{{editorial.nombre}}</option>
+                    </select>
                 </div>
                 <div class="form-group">
                     <label for="imagen_url">URL de la imagen</label>

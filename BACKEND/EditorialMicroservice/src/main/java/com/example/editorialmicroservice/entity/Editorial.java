@@ -10,14 +10,14 @@ public class Editorial {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private String name;
+    private String nombre;
     private String web_url;
 
     public Editorial() {
     }
 
-    public Editorial(String name, String web_url) {
-        this.name = name;
+    public Editorial(String nombre, String web_url) {
+        this.nombre = nombre;
         this.web_url = web_url;
     }
 
@@ -29,12 +29,12 @@ public class Editorial {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNombre(String name) {
+        this.nombre = nombre;
     }
 
     public String getWeb_url() {

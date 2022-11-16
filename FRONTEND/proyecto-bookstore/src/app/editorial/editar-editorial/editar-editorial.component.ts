@@ -1,23 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
-import { Book } from 'src/app/models/book';
 import { Editorial } from 'src/app/models/editorial';
-import { BookService } from 'src/app/service/book.service';
+import { EditorialService } from 'src/app/service/editorial.service';
 
 @Component({
-  selector: 'app-editar-book',
-  templateUrl: './editar-book.component.html',
-  styleUrls: ['./editar-book.component.css']
+  selector: 'app-editar-editorial',
+  templateUrl: './editar-editorial.component.html',
+  styleUrls: ['./editar-editorial.component.css']
 })
-export class EditarBookComponent implements OnInit {
+export class EditarEditorialComponent implements OnInit {
 
-  book!: Book;
-
-  editorials: Editorial[] = [];
+  editorial!: Editorial;
 
   constructor(
-    private bookService: BookService,
+    private editorialService: EditorialService,
     private activatedRoute: ActivatedRoute,
     private toastr: ToastrService,
     private router: Router
@@ -25,33 +22,33 @@ export class EditarBookComponent implements OnInit {
 
   ngOnInit(): void {
     const id = this.activatedRoute.snapshot.params['id'];
-    this.bookService.bookdetail(id).subscribe(
+    this.editorialService.editorialdetail(id).subscribe(
       data => {
-        this.book = data;
+        this.editorial = data;
       },
       err => {
         this.toastr.error(err.error.mensaje, 'Fail', {
           timeOut: 3000,  positionClass: 'toast-top-center',
         });
-        this.router.navigate(['/book-table']);
+        this.router.navigate(['/editorial-table']);
       }
     );
   }
 
   onUpdate(): void {
     const id = this.activatedRoute.snapshot.params['id'];
-    this.bookService.update(id, this.book).subscribe(
+    this.editorialService.update(id, this.editorial).subscribe(
       data => {
-        this.toastr.success('Libro Actualizado', 'OK', {
+        this.toastr.success('Editorial Actualizada', 'OK', {
           timeOut: 3000, positionClass: 'toast-top-center'
         });
-        this.router.navigate(['/book-table']);
+        this.router.navigate(['/editorial-table']);
       },
       err => {
         this.toastr.error(err.error.mensaje, 'Fail', {
           timeOut: 3000,  positionClass: 'toast-top-center',
         });
-        this.router.navigate(['/book-table']);
+        this.router.navigate(['/editorial-table']);
       }
     );
   }

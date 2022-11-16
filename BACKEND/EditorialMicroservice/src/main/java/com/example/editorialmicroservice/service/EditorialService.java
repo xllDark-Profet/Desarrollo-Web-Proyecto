@@ -26,8 +26,8 @@ public class EditorialService {
         return editorialRepository.findById(id);
     }
 
-    public Optional<Editorial> getByName(String name){
-        return editorialRepository.findByName(name);
+    public Optional<Editorial> getByName(String nombre){
+        return editorialRepository.findByNombre(nombre);
     }
 
     public void save(Editorial editorial){
@@ -42,26 +42,8 @@ public class EditorialService {
         return editorialRepository.existsById(id);
     }
 
-    public boolean existsByName(String name){
-        return editorialRepository.existsByName(name);
-    }
-
-    //Communication with BookService
-    //Books By Editorial
-    public Boolean editorialInventoryBooks(Integer idEditorial) {
-        Boolean result = false;
-        ArrayList<Integer> ids = new RestTemplate().getForObject("http://localhost:8081/books/getUseId", ArrayList.class);
-        for (Integer inte : ids) {
-            if (inte == idEditorial) {
-                result = true;
-            }
-        }
-        return result;
-    }
-
-    public List<Editorial> getIdAllEditorial(List<Integer> ids){
-        List<Editorial> editorialsid = (List<Editorial>) editorialRepository.findAllById(ids);
-        return editorialsid;
+    public boolean existsByName(String nombre){
+        return editorialRepository.existsByNombre(nombre);
     }
 
 

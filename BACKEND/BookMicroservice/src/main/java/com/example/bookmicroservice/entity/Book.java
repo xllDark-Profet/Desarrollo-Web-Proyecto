@@ -14,7 +14,7 @@ public class Book {
     private String nombre;
     private String descripcion;
     private int cantidad;
-    private int editorial_id;
+    private String editorial;
     private String imagen_url;
     private String dia_edicion;
 
@@ -24,11 +24,11 @@ public class Book {
     public Book() {
     }
 
-    public Book(String nombre, String descripcion, int cantidad, int editorial_id, String imagen_url, String dia_edicion) {
+    public Book(String nombre, String descripcion, int cantidad, String editorial, String imagen_url, String dia_edicion) {
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.cantidad = cantidad;
-        this.editorial_id = editorial_id;
+        this.editorial = editorial;
         this.imagen_url = imagen_url;
         this.dia_edicion = dia_edicion;
     }
@@ -65,12 +65,12 @@ public class Book {
         this.cantidad = cantidad;
     }
 
-    public int getEditorial_id() {
-        return editorial_id;
+    public String getEditorial() {
+        return editorial;
     }
 
-    public void setEditorial_id(int editorial_id) {
-        this.editorial_id = editorial_id;
+    public void setEditorial(String editorial) {
+        this.editorial = editorial;
     }
 
     public String getImagen_url() {

@@ -4,22 +4,22 @@ import javax.validation.constraints.NotBlank;
 
 public class EditorialDto {
     @NotBlank
-    private String name;
+    private String nombre;
 
     @NotBlank
     private String web_url;
 
-    public EditorialDto(@NotBlank String name, @NotBlank String web_url) {
-        this.name = name;
+    public EditorialDto(@NotBlank String nombre, @NotBlank String web_url) {
+        this.nombre = nombre;
         this.web_url = web_url;
     }
 
-    public String getName() {
-        return name;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public String getWeb_url() {

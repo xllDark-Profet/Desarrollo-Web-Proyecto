@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ListaEditorialComponent } from './lista-editorial.component';
+import { NuevaEditorialComponent } from './nueva-editorial.component';
 
-describe('ListaEditorialComponent', () => {
-  let component: ListaEditorialComponent;
-  let fixture: ComponentFixture<ListaEditorialComponent>;
+describe('NuevaEditorialComponent', () => {
+  let component: NuevaEditorialComponent;
+  let fixture: ComponentFixture<NuevaEditorialComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ListaEditorialComponent ]
+      declarations: [ NuevaEditorialComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ListaEditorialComponent);
+    fixture = TestBed.createComponent(NuevaEditorialComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

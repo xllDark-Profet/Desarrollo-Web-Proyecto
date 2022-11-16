@@ -15,7 +15,7 @@ public class BookDto {
     private Integer cantidad;
 
     @Min(0)
-    private Integer editorial_id;
+    private String editorial;
 
     @NotBlank
     private String imagen_url;
@@ -26,11 +26,11 @@ public class BookDto {
     public BookDto() {
     }
 
-    public BookDto(@NotBlank String nombre, @NotBlank String descripcion, @Min(0) Integer cantidad, @Min(0) Integer editorial_id, @NotBlank String imagen_url, @NotBlank String dia_edicion) {
+    public BookDto(@NotBlank String nombre, @NotBlank String descripcion, @Min(0) Integer cantidad, @NotBlank String editorial, @NotBlank String imagen_url, @NotBlank String dia_edicion) {
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.cantidad = cantidad;
-        this.editorial_id = editorial_id;
+        this.editorial = editorial;
         this.imagen_url = imagen_url;
         this.dia_edicion = dia_edicion;
     }
@@ -67,12 +67,12 @@ public class BookDto {
         this.imagen_url = imagen_url;
     }
 
-    public Integer getEditorial_id() {
-        return editorial_id;
+    public String getEditorial() {
+        return editorial;
     }
 
-    public void setEditorial_id(Integer editorial_id) {
-        this.editorial_id = editorial_id;
+    public void setEditorial(String editorial) {
+        this.editorial = editorial;
     }
 
     public String getDia_edicion() {

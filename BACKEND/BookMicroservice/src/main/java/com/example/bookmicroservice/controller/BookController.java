@@ -55,7 +55,7 @@ public class BookController {
             return new ResponseEntity(new Message("Ingresa un nombre"), HttpStatus.BAD_REQUEST);
         if(bookService.existsByName(bookDto.getNombre()))
             return new ResponseEntity(new Message("El nombre ya existe"), HttpStatus.BAD_REQUEST);
-        Book book = new Book(bookDto.getNombre(), bookDto.getDescripcion(), bookDto.getCantidad(), bookDto.getEditorial_id(), bookDto.getImagen_url(), bookDto.getDia_edicion());
+        Book book = new Book(bookDto.getNombre(), bookDto.getDescripcion(), bookDto.getCantidad(), bookDto.getEditorial(), bookDto.getImagen_url(), bookDto.getDia_edicion());
         bookService.save(book);
         return new ResponseEntity(new Message("Libro creado"), HttpStatus.OK);
     }
@@ -73,7 +73,7 @@ public class BookController {
         book.setNombre(bookDto.getNombre());
         book.setDescripcion(bookDto.getDescripcion());
         book.setCantidad(bookDto.getCantidad());
-        book.setEditorial_id(bookDto.getEditorial_id());
+        book.setEditorial(bookDto.getEditorial());
         book.setImagen_url(bookDto.getImagen_url());
         book.setDia_edicion(bookDto.getDia_edicion());
         bookService.save(book);

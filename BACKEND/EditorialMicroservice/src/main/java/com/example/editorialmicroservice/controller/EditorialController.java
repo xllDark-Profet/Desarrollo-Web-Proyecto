@@ -3,7 +3,6 @@ package com.example.editorialmicroservice.controller;
 import com.example.editorialmicroservice.dto.EditorialDto;
 import com.example.editorialmicroservice.dto.Message;
 import com.example.editorialmicroservice.entity.Editorial;
-import com.example.editorialmicroservice.entity.IdContainer;
 import com.example.editorialmicroservice.service.EditorialService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,13 +22,13 @@ public class EditorialController {
     @Autowired
     EditorialService editorialService;
 
-    @GetMapping("/editorial-list")
+    @GetMapping("/lista")
     public ResponseEntity<List<Editorial>> list(){
         List<Editorial> list = editorialService.list();
         return new ResponseEntity(list, HttpStatus.OK);
     }
 
-    @GetMapping("/editorial-detail/{id}")
+    @GetMapping("/detail/{id}")
     public ResponseEntity<Editorial> getById(@PathVariable("id") int id){
         if(!editorialService.existsById(id))
             return new ResponseEntity(new Message("no existe la editorial"), HttpStatus.NOT_FOUND);
@@ -37,7 +36,7 @@ public class EditorialController {
         return new ResponseEntity(editorial, HttpStatus.OK);
     }
 
-    @GetMapping("/editorial-detail-name/{name}")
+    @GetMapping("/detailname/{name}")
     public ResponseEntity<Editorial> getByName(@PathVariable("name") String name){
         if(!editorialService.existsByName(name))
             return new ResponseEntity(new Message("no existe la editorial"), HttpStatus.NOT_FOUND);
@@ -45,55 +44,40 @@ public class EditorialController {
         return new ResponseEntity(editorial, HttpStatus.OK);
     }
 
-    @PostMapping("/create-editorial")
+    @PostMapping("/create")
     public ResponseEntity<?> create(@RequestBody EditorialDto editorialDto){
-        if(StringUtils.isBlank(editorialDto.getName()))
+        if(StringUtils.isBlank(editorialDto.getNombre()))
             return new ResponseEntity(new Message("Ingresa un nombre"), HttpStatus.BAD_REQUEST);
-        if(editorialService.existsByName(editorialDto.getName()))
+        if(editorialService.existsByName(editorialDto.getNombre()))
             return new ResponseEntity(new Message("El nombre ya existe"), HttpStatus.BAD_REQUEST);
-        Editorial editorial = new Editorial(editorialDto.getName(),editorialDto.getWeb_url());
+        Editorial editorial = new Editorial(editorialDto.getNombre(),editorialDto.getWeb_url());
         editorialService.save(editorial);
         return new ResponseEntity(new Message("Editorial creada"), HttpStatus.OK);
     }
 
-    @PutMapping("/update-editorial/{id}")
+    @PutMapping("/update/{id}")
     public ResponseEntity<?> update(@PathVariable("id")int id, @RequestBody EditorialDto editorialDto){
         if(!editorialService.existsById(id))
             return new ResponseEntity(new Message("No existe"), HttpStatus.NOT_FOUND);
-        if(editorialService.existsByName(editorialDto.getName()) && editorialService.getByName(editorialDto.getName()).get().getId() != id)
+        if(editorialService.existsByName(editorialDto.getNombre()) && editorialService.getByName(editorialDto.getNombre()).get().getId() != id)
             return new ResponseEntity(new Message("El nombre ya existe"), HttpStatus.BAD_REQUEST);
-        if(StringUtils.isBlank(editorialDto.getName()))
+        if(StringUtils.isBlank(editorialDto.getNombre()))
             return new ResponseEntity(new Message("Ingrese el nombre"), HttpStatus.BAD_REQUEST);
 
         Editorial editorial = editorialService.getOne(id).get();
-        editorial.setName(editorialDto.getName());
+        editorial.setNombre(editorialDto.getNombre());
         editorial.setWeb_url(editorialDto.getWeb_url());
 
         editorialService.save(editorial);
         return new ResponseEntity(new Message("Editorial actualizada"), HttpStatus.OK);
     }
 
-    @DeleteMapping("/delete-editorial/{id}")
+    @DeleteMapping("/delete/{id}")
     public ResponseEntity<?> delete(@PathVariable("id")int id){
         if(!editorialService.existsById(id))
             return new ResponseEntity(new Message("La Editorial no existe"), HttpStatus.NOT_FOUND);
         editorialService.delete(id);
         return new ResponseEntity(new Message("Editorial eliminada"), HttpStatus.OK);
-    }
-
-    //Communication with BookService
-
-    //GET Id For BookService
-    @GetMapping("/idEditorial")
-    public List<Editorial> getIdEditoriales(@RequestBody List<IdContainer> idContainer){
-        List<Integer> ids = new ArrayList<>();
-        for (IdContainer id : idContainer) {
-            ids.add(id.getId());
-        }
-        List<Editorial> editorials = (List<Editorial>) editorialService.getIdAllEditorial(ids);
-
-        return editorials;
-
     }
 
 

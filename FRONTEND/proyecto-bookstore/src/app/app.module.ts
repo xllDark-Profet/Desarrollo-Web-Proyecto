@@ -16,9 +16,10 @@ import { ListaBookComponent } from './book/lista-book/lista-book.component';
 import { DetalleBookComponent } from './book/detalle-book/detalle-book.component';
 import { NuevoBookComponent } from './book/nuevo-book/nuevo-book.component';
 import { EditarBookComponent } from './book/editar-book/editar-book.component';
-import { ListaEditorialComponent } from './editorial/lista-editorial/lista-editorial.component';
-import { DetalleEditorialComponent } from './editorial/detalle-editorial/detalle-editorial.component';
 import { CrudTableBookComponent } from './book/crud-table-book/crud-table-book.component';
+import { CrudTableEditorialComponent } from './editorial/crud-table-editorial/crud-table-editorial.component';
+import { NuevaEditorialComponent } from './editorial/nueva-editorial/nueva-editorial.component';
+import { EditarEditorialComponent } from './editorial/editar-editorial/editar-editorial.component';
 
 @NgModule({
   declarations: [
@@ -27,9 +28,10 @@ import { CrudTableBookComponent } from './book/crud-table-book/crud-table-book.c
     DetalleBookComponent,
     NuevoBookComponent,
     EditarBookComponent,
-    ListaEditorialComponent,
-    DetalleEditorialComponent,
     CrudTableBookComponent,
+    CrudTableEditorialComponent,
+    NuevaEditorialComponent,
+    EditarEditorialComponent,
   ],
   imports: [
     BrowserModule,

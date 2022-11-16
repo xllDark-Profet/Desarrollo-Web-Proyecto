@@ -4,11 +4,11 @@ import com.example.bookmicroservice.entity.Book;
 import com.example.bookmicroservice.repository.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import javax.transaction.Transactional;
-import java.awt.print.Pageable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -18,10 +18,14 @@ import java.util.Optional;
 public class BookService {
 
     @Autowired
-    BookRepository bookRepository;
+    private final BookRepository bookRepository;
+
+    public BookService(BookRepository bookRepository){
+        this.bookRepository = bookRepository;
+    }
 
     public List<Book> list(){
-        return bookRepository.findAll();
+        return (List<Book>) bookRepository.findAll();
     }
 
     public Optional<Book> getOne(int id){
@@ -49,9 +53,8 @@ public class BookService {
     }
 
     //Paginacion
-
-    public Page<Book> paginas(Pageable pageable){
-        return bookRepository.findAll((org.springframework.data.domain.Pageable) pageable);
+    public Page<Book> paginas(PageRequest pageable){
+        return bookRepository.findAll(pageable);
     }
 
     //COMMUNICATION WITH EDITORIAL SERVICE

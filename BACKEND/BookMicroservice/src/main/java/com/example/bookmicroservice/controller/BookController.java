@@ -92,15 +92,13 @@ public class BookController {
     @GetMapping("/libros")
     public ResponseEntity<Page<Book>> paginas(
             @RequestParam(defaultValue = "0") int page,
-            @RequestParam(defaultValue = "10") int size,
-            @RequestParam(defaultValue = "nombre") String order,
+            @RequestParam(defaultValue = "1") int size,
+            @RequestParam(defaultValue = "id") String order,
             @RequestParam(defaultValue = "true") boolean asc
     ){
-        Page<Book> books = bookService.paginas(
-                (Pageable) PageRequest.of(page, size, Sort.by(order)));
+        Page<Book> books = bookService.paginas(PageRequest.of(page, size, Sort.by(order)));
         if(!asc)
-            books = bookService.paginas(
-                    (Pageable) PageRequest.of(page, size, Sort.by(order).descending()));
+            books = bookService.paginas(PageRequest.of(page, size, Sort.by(order).descending()));
         return new ResponseEntity<Page<Book>>(books, HttpStatus.OK);
     }
 

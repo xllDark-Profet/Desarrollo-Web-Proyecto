@@ -21,6 +21,7 @@ export class CrudTableBookComponent implements OnInit {
 
   ngOnInit(): void {
     this.cargarBooks();
+    this.cargarPaginas;
   }
 
   cargarBooks(): void{
@@ -54,6 +55,61 @@ export class CrudTableBookComponent implements OnInit {
         }
       );
     }
+  }
+
+  page = 0;
+  size = 1;
+  order = 'id';
+  asc = true;
+
+  totalPages: Array<number> = [];
+
+  isFirst = false;
+  isLast = false;
+
+  cargarPaginas() {
+    this.bookService.paginar(this.page, this.size, this.order, this.asc).subscribe(
+      data => {
+        this.books = data.content;
+        this.isFirst = data.first;
+        this.isLast = data.last;
+        this.totalPages = new Array(data['totalPages']);
+        console.log(data);
+      },
+      err => {
+        console.log(err.error);
+      }
+    );
+  }
+
+
+  sort(): void {
+    this.asc = !this.asc;
+    this.cargarBooks();
+  }
+
+  rewind(): void {
+    if (!this.isFirst) {
+      this.page--;
+      this.cargarBooks();
+    }
+  }
+
+  forward(): void {
+    if (!this.isLast) {
+      this.page++;
+      this.cargarBooks();
+    }
+  }
+
+  setPage(page: number): void {
+    this.page = page;
+    this.cargarBooks();
+  }
+  
+  setOrder(order: string): void {
+    this.order = order;
+    this.cargarBooks();
   }
 
 }

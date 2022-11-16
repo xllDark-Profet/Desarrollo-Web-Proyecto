@@ -12,6 +12,7 @@
           <th scope="col">Cantidad</th>
           <th scope="col"> </th>
           <th scope="col"> </th>
+          <th scope="col"><i class="fas fa-sort" (click)="sort()"></i></th>
           
         </tr>
       </thead>
@@ -26,11 +27,21 @@
           <td>{{book.cantidad}}</td>
           <td><button class="btn btn-outline-warning" routerLink="/update-book/{{book.id}}"><i class="far fa-edit"></i> Editar </button></td>
           <td><button class="btn btn-outline-danger" (click)="borrar(book.id)"><i class="far fa-trash-alt"></i> Borrar </button></td>
-  
+          <td></td>
+        </tr>
+        <tr>          
         </tr>
       </tbody>
     </table>
   </div>
+  <td><i class="fas fa-angle-double-left fa-2x" (click)="rewind()"></i></td>
+          <td colspan="2">
+            <span *ngFor="let p of totalPages; let i = index">
+              <a style="cursor: pointer;" (click)="setPage(i)"
+              [ngClass]="{'text-primary': i === page }">{{ i+1 }}&nbsp;&nbsp;&nbsp;</a>
+            </span>
+          </td>
+  <td><i class="fas fa-angle-double-right fa-2x" (click)="forward()"></i></td>
   <button type="button" class="btn btn-success" routerLink="/create-book">Nuevo Libro</button>
 </div>
 

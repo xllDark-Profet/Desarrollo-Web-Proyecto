@@ -1,6 +1,10 @@
 <div class="container mt-4">
+  <div class="input-group">
+    <input type="text" class="form-control" name="nombre" id="nombre" [(ngModel)]="book.nombre">
+    <button class="btn btn-outline-success" (click)="searchByName(book.nombre)" [disabled]="!book.nombre">Buscar</button>
+  </div>
   <div class="row">
-    <div *ngFor="let book of books" class="col-md-3 mb-4">
+    <div *ngFor="let book of books" class="col-md-3 mb-4 mt-4">
       <div class="card h-100">
         <img class="card-img-top" src="{{book.imagen_url}}" alt="Card image cap" />
         <div class="card-body">

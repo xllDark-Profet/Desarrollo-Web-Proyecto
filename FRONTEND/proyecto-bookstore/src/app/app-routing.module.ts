@@ -8,9 +8,13 @@ import { CrudTableBookComponent } from './book/crud-table-book/crud-table-book.c
 import { CrudTableEditorialComponent } from './editorial/crud-table-editorial/crud-table-editorial.component';
 import { NuevaEditorialComponent } from './editorial/nueva-editorial/nueva-editorial.component';
 import { EditarEditorialComponent } from './editorial/editar-editorial/editar-editorial.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
   {path: '', component: ListaBookComponent},
+  {path: 'login', component:LoginComponent},
+  {path: 'register', component:RegisterComponent},
   {path: 'detail/:id', component: DetalleBookComponent},
   {path: 'create-book', component: NuevoBookComponent},
   {path: 'update-book/:id', component: EditarBookComponent},

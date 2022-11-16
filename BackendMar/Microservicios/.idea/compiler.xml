@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="BookService" />
+        <module name="DiscoveryServer" />
+        <module name="APIGateway" />
+        <module name="EditorialMicroService" />
+        <module name="PersonService" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="APIGateway" target="11" />
+      <module name="BookService" target="11" />
+      <module name="DiscoveryServer" target="11" />
+      <module name="EditorialMicroService" target="11" />
+      <module name="PersonService" target="11" />
+      <module name="UserMicroService" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="APIGateway" options="-parameters" />
+      <module name="BookService" options="-parameters" />
+      <module name="DiscoveryServer" options="-parameters" />
+      <module name="EditorialMicroService" options="-parameters" />
+      <module name="PersonService" options="-parameters" />
+      <module name="UserMicroService" options="-parameters" />
+    </option>
+  </component>
+</project>

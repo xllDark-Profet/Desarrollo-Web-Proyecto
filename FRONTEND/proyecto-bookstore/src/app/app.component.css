@@ -1,0 +1,22 @@
+button{
+    background-color:rgb(47, 47, 92);
+    border-color:rgb(47, 47, 92) ;
+    text-decoration: solid;
+    color: white;
+    font-size: 16px;
+    border-top: 10px;
+}
+button:hover{
+    background-color: rgb(141, 141, 196);
+    border-color: rgb(141, 141, 196); ;
+}
+
+.loginbtn{
+    padding-left: 5px;
+    padding-right: 10px;
+}
+
+.registerbtn{
+    padding-left: 5px;
+    padding-right: 20px;
+}

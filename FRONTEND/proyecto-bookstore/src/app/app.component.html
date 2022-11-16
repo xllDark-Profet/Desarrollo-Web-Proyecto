@@ -1,45 +1,114 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">BookStore Marandy</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/book-table" >Libros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/editorial-table" >Editoriales</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="" >Usuarios</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search" #searchForm="ngForm">
-          <input
-            class="form-control me-2"
-            type="search"
-            name="filter"
-            placeholder="Buscar Libro"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success btn-light" type="submit">
-            Buscar
-          </button>
-        </form>
+<div [ngSwitch]="auth">
+
+  <div *ngSwitchCase="'Employee'">
+    <nav class="navbar navbar-expand-lg" style="background-color: orange">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="assets/bookIcon.png" width="50" height="50">
+          Libreria ANDYMAR</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/book-table">Libros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/editorial-table">Editoriales</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="">Usuarios</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search" #searchForm="ngForm">
+            <input class="form-control me-2" type="search" name="filter" placeholder="Buscar Libro"
+              aria-label="Search" />
+            <button class="btn btn-outline-success btn-light" type="submit">
+              Buscar
+            </button>
+          </form>
+          <div class="loginbtn">
+            <a routerLink="/login"><button class="btn btn-outline-success" type="submit">Modificar Perfil</button></a>
+          </div>
+          <div class="registerbtn">
+            <button class="btn btn-outline-success" type="submit">Cerrar Sesion</button>
+          </div>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </div>
+
+  <div *ngSwitchCase="'Customer'">
+    <nav class="navbar navbar-expand-lg" style="background-color: orange">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="assets/bookIcon.png" width="50" height="50">
+          Libreria ANDYMAR</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search" #searchForm="ngForm">
+            <input class="form-control me-2" type="search" name="filter" placeholder="Buscar Libro"
+              aria-label="Search" />
+            <button class="btn btn-outline-success btn-light" type="submit">
+              Buscar
+            </button>
+          </form>
+          <div class="loginbtn">
+            <a routerLink="/login"><button class="btn btn-outline-success" type="submit">Modificar Perfil</button></a>
+          </div>
+          <div class="registerbtn">
+            <button class="btn btn-outline-success" type="submit">Cerrar Sesion</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div *ngSwitchDefault>
+    <nav class="navbar navbar-expand-lg" style="background-color: orange">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="assets/bookIcon.png" width="50" height="50">
+          Libreria ANDYMAR</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search" #searchForm="ngForm">
+            <input class="form-control me-2" type="search" name="filter" placeholder="Buscar Libro"
+              aria-label="Search" />
+            <button class="btn btn-outline-success btn-light" type="submit">
+              Buscar
+            </button>
+          </form>
+          <div class="loginbtn">
+            <a routerLink="/login"><button class="btn btn-outline-success" type="submit">Ingresar</button></a>
+        </div>
+
+        <div class="registerbtn">
+            <a routerLink="/register"><button class="btn btn-outline-success"
+                    type="submit">Registrar</button></a>
+        </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+
 <router-outlet></router-outlet>

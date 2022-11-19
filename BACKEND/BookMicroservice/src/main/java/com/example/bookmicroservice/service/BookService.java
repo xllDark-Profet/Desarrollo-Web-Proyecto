@@ -3,6 +3,7 @@ package com.example.bookmicroservice.service;
 import com.example.bookmicroservice.entity.Book;
 import com.example.bookmicroservice.repository.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
@@ -91,47 +92,16 @@ public class BookService {
     }
 
     //Paginacion
-<<<<<<< Updated upstream
-    public Page<Book> paginas(PageRequest pageable){
+    public Page<Book> paginas(PageRequest pageable) {
         return bookRepository.findAll(pageable);
-=======
 
-    /**
-     * Metodo que  invoca el metodo del repositorio que pagina la lista de libros
-     * @param pageable
-     * @return lista de libros paginados
-     */
-    public Page<Book> paginas(Pageable pageable){
-        return bookRepository.findAll((org.springframework.data.domain.Pageable) pageable);
->>>>>>> Stashed changes
+        /**
+         * Metodo que  invoca el metodo del repositorio que pagina la lista de libros
+         * @param pageable
+         * @return lista de libros paginados
+         */
+
     }
 
-    //COMMUNICATION WITH EDITORIAL SERVICE
-
-    //COMMUNICATION BETWEEN SERVICES
-    //If there exist any editorial
-
-    public Boolean editorialExist(Integer idEditorial) {
-        Boolean result = false;
-        ArrayList<Integer> ids = new RestTemplate().getForObject("http://localhost:8082/editorials/idEditorial", ArrayList.class);
-        for (Integer inte : ids) {
-            if (inte == idEditorial) {
-                result = true;
-            }
-        }
-        return result;
-    }
-    //Id from editorial
-    /*
-    public ArrayList<Integer>editorialIdUse(){
-        ArrayList<Integer> ids=new ArrayList<>();
-        for (Book book:list()) {
-            if (!ids.contains(book.getEditorial_id())){
-                ids.add(book.getEditorial_id());
-            }
-        }
-        return ids;
-    }
-    * */
 
 }

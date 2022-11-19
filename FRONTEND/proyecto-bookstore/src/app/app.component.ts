@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'proyecto-bookstore';
   /**Atributo que representa que tipo de usuario se autentica */
-  auth:string='';
+  auth:string='Employee';
   /**Metodo que cambia el header conforme el usuario cierre sesion */
   cambiarUsuario(){
     this.auth='';

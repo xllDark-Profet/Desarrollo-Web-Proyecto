@@ -15,7 +15,6 @@ export class ListaBookComponent implements OnInit {
    * En este arreglo se guardaran los libros de la base de datos 
    */
   books: Book[] = [];
-<<<<<<< Updated upstream
 
 
 
@@ -36,13 +35,11 @@ export class ListaBookComponent implements OnInit {
   });
   nombre: any;
 
-=======
   /**
    * Constructor del componente
    * @param bookService 
    * @param http 
    */
->>>>>>> Stashed changes
   constructor(private bookService: BookService, private http:HttpClient) { }
   /**
    * En este metodo se cargan los libros al iniciar la pagina
@@ -89,9 +86,7 @@ export class ListaBookComponent implements OnInit {
     this.book.nombre = this.nombre;
     this.getData(this.book);
   }
-<<<<<<< Updated upstream
   
-=======
   /**
    * Este metodo se encarga de recuperar el nombre del libro que se desea buscar y llamar al metodo del servicio 
    * que dado un nombre devuelve un libro 
@@ -109,5 +104,4 @@ export class ListaBookComponent implements OnInit {
     return this.searchResults.asObservable();
   }
 
->>>>>>> Stashed changes
 }

@@ -13,12 +13,18 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 
 @SpringBootApplication
 @EnableEurekaClient
+/**
+ * Clase principal de la aplicacion de libreria
+ */
 public class PersonServiceApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(PersonServiceApplication.class, args);
     }
 
+    /**
+     * Metodo que se encarga de configurar la auteniticacion  de la libreria
+     */
     @EnableWebSecurity
     @Configuration
     class WebSecurityConfig extends WebSecurityConfigurerAdapter {

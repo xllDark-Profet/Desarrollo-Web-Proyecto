@@ -14,6 +14,10 @@ import java.io.IOException;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * Esta clase se encarga de realizar las diferentes configuraciones para obtener el token JWT
+ */
+
 public class JWTAuthorizationFilter extends OncePerRequestFilter {
     private final String HEADER = "Authorization";
     private final String PREFIX = "Bearer ";
@@ -40,17 +44,12 @@ public class JWTAuthorizationFilter extends OncePerRequestFilter {
         }
     }
 
-    private Claims validateToken(HttpServletRequest request) {
+    public Claims validateToken(HttpServletRequest request) {
         String jwtToken = request.getHeader(HEADER).replace(PREFIX, "");
         return Jwts.parser().setSigningKey(SECRET.getBytes()).parseClaimsJws(jwtToken).getBody();
     }
 
-    /**
-     * Metodo para autenticarnos dentro del flujo de Spring
-     *
-     * @param claims
-     */
-    private void setUpSpringAuthentication(Claims claims) {
+    public void setUpSpringAuthentication(Claims claims) {
         @SuppressWarnings("unchecked")
         List<String> authorities = (List) claims.get("authorities");
 
@@ -60,7 +59,7 @@ public class JWTAuthorizationFilter extends OncePerRequestFilter {
 
     }
 
-    private boolean existeJWTToken(HttpServletRequest request, HttpServletResponse res) {
+    public boolean existeJWTToken(HttpServletRequest request, HttpServletResponse res) {
         String authenticationHeader = request.getHeader(HEADER);
         if (authenticationHeader == null || !authenticationHeader.startsWith(PREFIX))
             return false;

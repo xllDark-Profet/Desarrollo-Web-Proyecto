@@ -11,15 +11,27 @@ import { EditorialService } from 'src/app/service/editorial.service';
 })
 export class EditarEditorialComponent implements OnInit {
 
+  /**
+   * Este atributo va a guardarla editorial que se va a editar
+   */
   editorial!: Editorial;
-
+  /**
+   * Constructor del componente
+   * @param editorialService 
+   * @param activatedRoute 
+   * @param toastr 
+   * @param router 
+   */
   constructor(
     private editorialService: EditorialService,
     private activatedRoute: ActivatedRoute,
     private toastr: ToastrService,
     private router: Router
   ) { }
-
+  /**
+   * Este metodo  llama al metodo del servicio que dado un id devuelve una editorial. EN caso de que la operacion no sea 
+   * exitosa se muestra un mensaje en un toast de que fallo y se redirige a la tabla 
+   */
   ngOnInit(): void {
     const id = this.activatedRoute.snapshot.params['id'];
     this.editorialService.editorialdetail(id).subscribe(
@@ -34,7 +46,11 @@ export class EditarEditorialComponent implements OnInit {
       }
     );
   }
-
+  /**
+   * Este metodo llama al metodo del servicio que dado un id y una editorial modifica los atributos de la correspondiente al id.
+      Si se puede actualizar correctamente se muestra un toast con un mensjae de exito de la informacion y se redirige a la tabla. 
+      De lo contrario, se muestra un toast con el mensaje de error y se redirige a la tabla 
+  */
   onUpdate(): void {
     const id = this.activatedRoute.snapshot.params['id'];
     this.editorialService.update(id, this.editorial).subscribe(

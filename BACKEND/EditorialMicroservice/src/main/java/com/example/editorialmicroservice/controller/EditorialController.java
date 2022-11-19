@@ -14,6 +14,9 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Clase que se encarga de la comunicacion REST
+ */
 @RestController
 @RequestMapping("/editorial")
 @CrossOrigin(origins = "http://localhost:4200")
@@ -22,12 +25,21 @@ public class EditorialController {
     @Autowired
     EditorialService editorialService;
 
+    /**
+     * Metodo que devuelve una lista de editoriales registradas en la libreria
+     * @return lista editoriales y codigo resultado http de la operacion
+     */
     @GetMapping("/lista")
     public ResponseEntity<List<Editorial>> list(){
         List<Editorial> list = editorialService.list();
         return new ResponseEntity(list, HttpStatus.OK);
     }
 
+    /**
+     * Metodo que devuelve una editorial dado el id de la misma
+     * @param id
+     * @return editorial que corresponde al id y codigo resultado http de la operacion
+     */
     @GetMapping("/detail/{id}")
     public ResponseEntity<Editorial> getById(@PathVariable("id") int id){
         if(!editorialService.existsById(id))
@@ -36,6 +48,11 @@ public class EditorialController {
         return new ResponseEntity(editorial, HttpStatus.OK);
     }
 
+    /**
+     * Metodo que devuelve una editorial dado su nombre
+     * @param name
+     * @return editorial y codigo resultado http de la operacion
+     */
     @GetMapping("/detailname/{name}")
     public ResponseEntity<Editorial> getByName(@PathVariable("name") String name){
         if(!editorialService.existsByName(name))
@@ -44,6 +61,11 @@ public class EditorialController {
         return new ResponseEntity(editorial, HttpStatus.OK);
     }
 
+    /**
+     * Metodo que crea una editorial
+     * @param editorialDto
+     * @return mensaje que informa el resultado de la operacion y codigo resultado http de la operacion
+     */
     @PostMapping("/create")
     public ResponseEntity<?> create(@RequestBody EditorialDto editorialDto){
         if(StringUtils.isBlank(editorialDto.getNombre()))
@@ -55,6 +77,12 @@ public class EditorialController {
         return new ResponseEntity(new Message("Editorial creada"), HttpStatus.OK);
     }
 
+    /**
+     * Metodo que modifica todos los atributos de una editorial dado su id
+     * @param id
+     * @param editorialDto
+     * @return mensaje que indica el resultado de la operacion y codigo resultado http de la operacion
+     */
     @PutMapping("/update/{id}")
     public ResponseEntity<?> update(@PathVariable("id")int id, @RequestBody EditorialDto editorialDto){
         if(!editorialService.existsById(id))
@@ -71,6 +99,12 @@ public class EditorialController {
         editorialService.save(editorial);
         return new ResponseEntity(new Message("Editorial actualizada"), HttpStatus.OK);
     }
+
+    /**
+     * Metodo que elimina una editorial dado su id
+     * @param id
+     * @return mensaje con el resultado de la operacion y codigo resultado http de la operacion
+     */
 
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<?> delete(@PathVariable("id")int id){

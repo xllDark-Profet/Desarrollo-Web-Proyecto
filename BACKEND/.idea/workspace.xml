@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04c755b5-fd43-480b-b2b9-a7cec51e15f5" name="Changes" comment="">
+<<<<<<< Updated upstream
       <change afterPath="$PROJECT_DIR$/../BackendMar/Microservicios/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../BackendMar/Microservicios/.idea/Microservicios.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../BackendMar/Microservicios/.idea/compiler.xml" afterDir="false" />
@@ -324,7 +325,77 @@
       <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/app.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/app.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/app.component.ts" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_9_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_7_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_7_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APIGateway/src/main/java/com/example/apigateway/ApiGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/APIGateway/src/main/java/com/example/apigateway/ApiGatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthenticationMicroservice/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthenticationMicroservice/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthenticationMicroservice/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthenticationMicroservice/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthenticationMicroservice/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthenticationMicroservice/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthenticationMicroservice/src/main/java/com/example/authenticationmicroservice/AuthenticationMicroserviceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthenticationMicroservice/src/main/java/com/example/authenticationmicroservice/MainSecurity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthenticationMicroservice/src/main/java/com/example/authenticationmicroservice/controller/AuthController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthenticationMicroservice/src/main/java/com/example/authenticationmicroservice/dto/JWTDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthenticationMicroservice/src/main/java/com/example/authenticationmicroservice/dto/LoginUserDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthenticationMicroservice/src/main/java/com/example/authenticationmicroservice/dto/Message.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthenticationMicroservice/src/main/java/com/example/authenticationmicroservice/dto/NewUserDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthenticationMicroservice/src/main/java/com/example/authenticationmicroservice/entity/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthenticationMicroservice/src/main/java/com/example/authenticationmicroservice/entity/Rol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthenticationMicroservice/src/main/java/com/example/authenticationmicroservice/entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthenticationMicroservice/src/main/java/com/example/authenticationmicroservice/enums/RolNombre.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthenticationMicroservice/src/main/java/com/example/authenticationmicroservice/jwt/JWTEntryPoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthenticationMicroservice/src/main/java/com/example/authenticationmicroservice/jwt/JWTFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthenticationMicroservice/src/main/java/com/example/authenticationmicroservice/jwt/JWTProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthenticationMicroservice/src/main/java/com/example/authenticationmicroservice/repository/RolRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthenticationMicroservice/src/main/java/com/example/authenticationmicroservice/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthenticationMicroservice/src/main/java/com/example/authenticationmicroservice/service/RolService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthenticationMicroservice/src/main/java/com/example/authenticationmicroservice/service/UserDetailsServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthenticationMicroservice/src/main/java/com/example/authenticationmicroservice/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthenticationMicroservice/src/main/java/com/example/authenticationmicroservice/util/CreateRoles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthenticationMicroservice/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthenticationMicroservice/src/test/java/com/example/authenticationmicroservice/AuthenticationMicroserviceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookMicroservice/src/main/java/com/example/bookmicroservice/BookMicroserviceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookMicroservice/src/main/java/com/example/bookmicroservice/BookMicroserviceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookMicroservice/src/main/java/com/example/bookmicroservice/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookMicroservice/src/main/java/com/example/bookmicroservice/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookMicroservice/src/main/java/com/example/bookmicroservice/dto/BookDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookMicroservice/src/main/java/com/example/bookmicroservice/dto/BookDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookMicroservice/src/main/java/com/example/bookmicroservice/dto/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookMicroservice/src/main/java/com/example/bookmicroservice/dto/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookMicroservice/src/main/java/com/example/bookmicroservice/entity/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookMicroservice/src/main/java/com/example/bookmicroservice/entity/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookMicroservice/src/main/java/com/example/bookmicroservice/repository/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookMicroservice/src/main/java/com/example/bookmicroservice/repository/BookRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookMicroservice/src/main/java/com/example/bookmicroservice/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookMicroservice/src/main/java/com/example/bookmicroservice/service/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DiscoveryServer/src/main/java/com/example/discoveryserver/DiscoveryServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/DiscoveryServer/src/main/java/com/example/discoveryserver/DiscoveryServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EditorialMicroservice/src/main/java/com/example/editorialmicroservice/EditorialMicroserviceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/EditorialMicroservice/src/main/java/com/example/editorialmicroservice/EditorialMicroserviceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EditorialMicroservice/src/main/java/com/example/editorialmicroservice/controller/EditorialController.java" beforeDir="false" afterPath="$PROJECT_DIR$/EditorialMicroservice/src/main/java/com/example/editorialmicroservice/controller/EditorialController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EditorialMicroservice/src/main/java/com/example/editorialmicroservice/dto/EditorialDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/EditorialMicroservice/src/main/java/com/example/editorialmicroservice/dto/EditorialDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EditorialMicroservice/src/main/java/com/example/editorialmicroservice/dto/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/EditorialMicroservice/src/main/java/com/example/editorialmicroservice/dto/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EditorialMicroservice/src/main/java/com/example/editorialmicroservice/entity/Editorial.java" beforeDir="false" afterPath="$PROJECT_DIR$/EditorialMicroservice/src/main/java/com/example/editorialmicroservice/entity/Editorial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EditorialMicroservice/src/main/java/com/example/editorialmicroservice/repository/EditorialRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/EditorialMicroservice/src/main/java/com/example/editorialmicroservice/repository/EditorialRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EditorialMicroservice/src/main/java/com/example/editorialmicroservice/service/EditorialService.java" beforeDir="false" afterPath="$PROJECT_DIR$/EditorialMicroservice/src/main/java/com/example/editorialmicroservice/service/EditorialService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BackendMar/Microservicios/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BackendMar/Microservicios/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BackendMar/Microservicios/PersonMicroService/src/main/java/com/example/personmicroservice/PatchEntities/PatchChangeBirth.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BackendMar/Microservicios/PersonMicroService/src/main/java/com/example/personmicroservice/PatchEntities/PatchChangeBirth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BackendMar/Microservicios/PersonMicroService/src/main/java/com/example/personmicroservice/PatchEntities/PatchChangeCharge.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BackendMar/Microservicios/PersonMicroService/src/main/java/com/example/personmicroservice/PatchEntities/PatchChangeCharge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BackendMar/Microservicios/PersonMicroService/src/main/java/com/example/personmicroservice/PatchEntities/PatchChangeName.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BackendMar/Microservicios/PersonMicroService/src/main/java/com/example/personmicroservice/PatchEntities/PatchChangeName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BackendMar/Microservicios/PersonMicroService/src/main/java/com/example/personmicroservice/PatchEntities/PatchChangeSurname.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BackendMar/Microservicios/PersonMicroService/src/main/java/com/example/personmicroservice/PatchEntities/PatchChangeSurname.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BackendMar/Microservicios/PersonMicroService/src/main/java/com/example/personmicroservice/PersonServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BackendMar/Microservicios/PersonMicroService/src/main/java/com/example/personmicroservice/PersonServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BackendMar/Microservicios/PersonMicroService/src/main/java/com/example/personmicroservice/configuration/JWTAuthorizationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BackendMar/Microservicios/PersonMicroService/src/main/java/com/example/personmicroservice/configuration/JWTAuthorizationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BackendMar/Microservicios/PersonMicroService/src/main/java/com/example/personmicroservice/controller/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BackendMar/Microservicios/PersonMicroService/src/main/java/com/example/personmicroservice/controller/PersonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BackendMar/Microservicios/PersonMicroService/src/main/java/com/example/personmicroservice/entity/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BackendMar/Microservicios/PersonMicroService/src/main/java/com/example/personmicroservice/entity/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BackendMar/Microservicios/PersonMicroService/src/main/java/com/example/personmicroservice/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BackendMar/Microservicios/PersonMicroService/src/main/java/com/example/personmicroservice/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BackendMar/Microservicios/PersonMicroService/src/main/java/com/example/personmicroservice/repository/PersonRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BackendMar/Microservicios/PersonMicroService/src/main/java/com/example/personmicroservice/repository/PersonRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BackendMar/Microservicios/PersonMicroService/src/main/java/com/example/personmicroservice/service/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BackendMar/Microservicios/PersonMicroService/src/main/java/com/example/personmicroservice/service/PersonService.java" afterDir="false" />
+>>>>>>> Stashed changes
       <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/models/book.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/models/editorial.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/service/book.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/service/book.service.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/service/editorial.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/service/editorial.service.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/service/login.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/service/login.service.spec.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -359,6 +430,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< Updated upstream
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
@@ -367,6 +439,17 @@
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/marir/OneDrive/Desktop/ingenieria/octavo/WEBESTESIES/Backend/Microservicios&quot;
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/marir/OneDrive/Desktop/ingenieria/octavo/DesarrolloWeb/ENTREGA3PROYECTO/Desarrollo-Web-Proyecto/BACKEND",
+    "spring.configuration.checksum": "be1a0f47cc1c5a83f681246e0c1d7e49"
+>>>>>>> Stashed changes
   }
 }</component>
   <component name="ReactorSettings">
@@ -379,7 +462,11 @@
       </set>
     </option>
   </component>
+<<<<<<< Updated upstream
   <component name="RunManager">
+=======
+  <component name="RunManager" selected="Spring Boot.ApiGatewayApplication">
+>>>>>>> Stashed changes
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="APIGateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.apigateway.ApiGatewayApplication" />
@@ -437,7 +524,8 @@
       <workItem from="1668630226770" duration="62000" />
       <workItem from="1668630321425" duration="210000" />
       <workItem from="1668630545559" duration="109000" />
-      <workItem from="1668630666484" duration="1128000" />
+      <workItem from="1668630666484" duration="3831000" />
+      <workItem from="1668812197705" duration="3401000" />
     </task>
     <servers />
   </component>

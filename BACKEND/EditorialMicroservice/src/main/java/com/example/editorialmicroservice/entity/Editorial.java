@@ -5,6 +5,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+/**
+ * Esta clase representa al objeto editorial
+ */
 @Entity
 public class Editorial {
     @Id

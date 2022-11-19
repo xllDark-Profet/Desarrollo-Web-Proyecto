@@ -18,6 +18,9 @@ import java.awt.print.Pageable;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Esta clase se encarga de la comunicacion rest
+ */
 @RestController
 @RequestMapping("/book")
 @CrossOrigin(origins = "http://localhost:4200")
@@ -27,12 +30,21 @@ public class BookController {
     @Autowired
     BookService bookService;
 
+    /**
+     * Metodo que devuelve la lista de libros registrada en la base de datos
+     * @return lista de libros
+     */
     @GetMapping("/lista")
     public ResponseEntity<List<Book>> list(){
         List<Book> list = bookService.list();
         return new ResponseEntity(list, HttpStatus.OK);
     }
 
+    /**
+     * Metodo que dado un id devuelve el libro correspondiente a el
+     * @param id
+     * @return libro que corresponde al id y el codigo http de resultado de la operacion
+     */
     @GetMapping("/detail/{id}")
     public ResponseEntity<Book> getById(@PathVariable("id") int id){
         if(!bookService.existsById(id))
@@ -41,6 +53,11 @@ public class BookController {
         return new ResponseEntity(book, HttpStatus.OK);
     }
 
+    /**
+     * Metodo que dado un nombre devuelve el libro correspondiente a el
+     * @param name
+     * @return libro que corresponde al nombre y el codigo http de resultado de la operacion
+     */
     @GetMapping("/detailname/{name}")
     public ResponseEntity<Book> getByName(@PathVariable("name") String name){
         if(!bookService.existsByName(name))
@@ -48,6 +65,12 @@ public class BookController {
         Book book = bookService.getByName(name).get();
         return new ResponseEntity(book, HttpStatus.OK);
     }
+
+    /**
+     * Metodo que crea un libro. Verifica la validez de los atributos del nuevo libro.
+     * @param bookDto
+     * @return mensaje que indica el resultado de la operacion y el codigo http de resultado de la operacion
+     */
 
     @PostMapping("/create")
     public ResponseEntity<?> create(@RequestBody BookDto bookDto){
@@ -60,6 +83,13 @@ public class BookController {
         return new ResponseEntity(new Message("Libro creado"), HttpStatus.OK);
     }
 
+    /**
+     * Metodo que dado un id y un libro modifica los atributos de este. Verifica primero la validez
+     * de dichos atributos.
+     * @param id
+     * @param bookDto
+     * @return mensjae que indica el resultado de la operacion y el codigo http de resultado de la operacion
+     */
     @PutMapping("/update/{id}")
     public ResponseEntity<?> update(@PathVariable("id")int id, @RequestBody BookDto bookDto){
         if(!bookService.existsById(id))
@@ -80,6 +110,11 @@ public class BookController {
         return new ResponseEntity(new Message("Libro actualizado"), HttpStatus.OK);
     }
 
+    /**
+     * Metodo que elimina un libro dado un id
+     * @param id
+     * @return mensaje con el resultado de la operacion y el codigo http de resultado de la operacion
+     */
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<?> delete(@PathVariable("id")int id){
         if(!bookService.existsById(id))
@@ -88,6 +123,14 @@ public class BookController {
         return new ResponseEntity(new Message("Libro eliminado"), HttpStatus.OK);
     }
 
+    /**
+     * Metodo que se encarga de la paginacion de los libros
+     * @param page
+     * @param size
+     * @param order
+     * @param asc
+     * @return paginacion de los resultados y el codigo http de resultado de la operacion
+     */
     //Paginacion
     @GetMapping("/libros")
     public ResponseEntity<Page<Book>> paginas(

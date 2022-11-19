@@ -24,6 +24,7 @@ import { NuevaEditorialComponent } from './editorial/nueva-editorial/nueva-edito
 import { EditarEditorialComponent } from './editorial/editar-editorial/editar-editorial.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { UserListarComponent } from './user-listar/user-listar.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { RegisterComponent } from './register/register.component';
     EditarEditorialComponent,
     LoginComponent,
     RegisterComponent,
+    UserListarComponent,
   ],
   imports: [
     BrowserModule,

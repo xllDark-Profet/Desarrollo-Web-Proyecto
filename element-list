@@ -1,0 +1,7 @@
+com.example.personmicroservice
+com.example.personmicroservice.configuration
+com.example.personmicroservice.controller
+com.example.personmicroservice.entity
+com.example.personmicroservice.PatchEntities
+com.example.personmicroservice.repository
+com.example.personmicroservice.service

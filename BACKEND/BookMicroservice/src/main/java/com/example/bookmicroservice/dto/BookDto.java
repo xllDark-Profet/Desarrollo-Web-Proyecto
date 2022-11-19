@@ -3,6 +3,9 @@ package com.example.bookmicroservice.dto;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 
+/**
+ * Esta clase se encarga de representar el objeto de libro usando el patron DTO en la aplicacion
+ */
 public class BookDto {
 
     @NotBlank
@@ -23,9 +26,21 @@ public class BookDto {
     @NotBlank
     private String dia_edicion;
 
+    /**
+     * Constructor
+     */
     public BookDto() {
     }
 
+    /**
+     * Constructor con parametros
+     * @param nombre
+     * @param descripcion
+     * @param cantidad
+     * @param editorial
+     * @param imagen_url
+     * @param dia_edicion
+     */
     public BookDto(@NotBlank String nombre, @NotBlank String descripcion, @Min(0) Integer cantidad, @NotBlank String editorial, @NotBlank String imagen_url, @NotBlank String dia_edicion) {
         this.nombre = nombre;
         this.descripcion = descripcion;

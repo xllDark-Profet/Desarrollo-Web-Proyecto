@@ -10,10 +10,17 @@ import { EditorialService } from 'src/app/service/editorial.service';
   styleUrls: ['./nueva-editorial.component.css']
 })
 export class NuevaEditorialComponent implements OnInit {
-
+/**
+ * Inicializacion de los atributos de una editorial 
+ */
   nombre = '';
   web_url = '';
-
+/**
+ * COnstructor de la clase
+ * @param editorialService 
+ * @param toastr 
+ * @param router 
+ */
   constructor(
     private editorialService: EditorialService,
     private toastr: ToastrService,
@@ -22,7 +29,10 @@ export class NuevaEditorialComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  /**
+   * Este metodo se encarga de recuperar los atributos de la editorial y  llamar al metodo del servicio que 
+   * crea una nueva editorial 
+   */
   onCreate(): void {
     const editorial = new Editorial(this.nombre, this.web_url)
     this.editorialService.save(editorial).subscribe(

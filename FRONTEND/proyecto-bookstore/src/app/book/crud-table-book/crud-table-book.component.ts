@@ -13,17 +13,29 @@ import { BookService } from 'src/app/service/book.service';
   styleUrls: ['./crud-table-book.component.css']
 })
 export class CrudTableBookComponent implements OnInit {
-
+  /**
+   * Arreglo en el que se guardara la lista de libros
+   */
   books: Book[] = [];
-
+  /**
+   * Constructor del componente
+   * @param bookService 
+   * @param http 
+   * @param toastr 
+   * @param router 
+   */
   constructor(private bookService: BookService, private http:HttpClient, private toastr: ToastrService,
     private router: Router) { }
-
+  /**
+   * metodo que carga la lista de libros cuando se inicia la aplicacion 
+   */
   ngOnInit(): void {
     this.cargarBooks();
     this.cargarPaginas;
   }
-
+  /**
+   * Este metodo se encarga de llamar al metodo del servicio que lista todos los libros traidos desde el backend. 
+   */
   cargarBooks(): void{
     this.bookService.booklist().subscribe(
       data =>{
@@ -34,7 +46,10 @@ export class CrudTableBookComponent implements OnInit {
       }
     )
   }
-
+  /**
+   * Este metodo se encarga de llamar al metodo del servicio que elimina un libro dado un id 
+   * @param id 
+   */
   borrar(id?: number){
     if (id != undefined){
       this.bookService.delete(id).subscribe(

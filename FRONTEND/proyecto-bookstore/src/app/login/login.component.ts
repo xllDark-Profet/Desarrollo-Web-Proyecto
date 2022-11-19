@@ -10,11 +10,18 @@ import { user } from './user';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-
+/**
+ * Atributos componente
+ */
 form:FormGroup
 userLogin:user  
 userAuth:user
-
+/**
+ * Constructor de la clase 
+ * @param fb 
+ * @param loginService 
+ * @param router 
+ */
 constructor(private fb:FormBuilder, private loginService: LoginService,public router: Router ) { 
   this.form=this.fb.group({
     email:['', Validators.required],
@@ -23,10 +30,15 @@ constructor(private fb:FormBuilder, private loginService: LoginService,public ro
   this.userLogin= new user("", "");
   this.userAuth= new user("", "");
 }
-
+/**
+ * Metodo que no hace nada cuando se cargue la aplicacion 
+ */
 ngOnInit(): void {
 }
-
+/**
+ * Este metodo se encarga de recuperar los valores del email y la contrasena y llamar al metodo del servicio 
+ * que realiza la autenticacion y a su vez al que guarda el token en la cookie
+ */
 login(){
   const val=this.form.value
   this.userLogin.setUsername(val.email)

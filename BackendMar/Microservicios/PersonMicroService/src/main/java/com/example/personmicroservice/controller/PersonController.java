@@ -22,6 +22,9 @@ import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * Esta clase se encarga de la comunicacion REST
+ */
 @RestController
 @CrossOrigin()
 @RequestMapping("/persons")
@@ -32,7 +35,7 @@ public class PersonController {
     /**
      * Metodo para autenticar un usuario  llamado login
      * @param userLogin
-     * @return ResponseEntity<User>
+     * @return el objeto usuario con la con el token y la respuesta http
      */
 
     @PostMapping("/login")
@@ -49,7 +52,12 @@ public class PersonController {
         }
     }
 
-    private String getJWTToken(String username) {
+    /**
+     * Metodo que usa JWT para generar el token de autenticacion
+     * @param username
+     * @return token
+     */
+    public String getJWTToken(String username) {
         String secretKey = "mySecretKey";
         List<GrantedAuthority> grantedAuthorities = AuthorityUtils
                 .commaSeparatedStringToAuthorityList("ROLE_USER");
@@ -71,9 +79,10 @@ public class PersonController {
     }
 
     /**
-     * Metodo para crear un nuevo usuario en la base de datos llamado postNewPerson
+     * Metodo para crear un nuevo usuario en la base de datos. Este metodo revisa que los campos esten llenos
+     * y posteriormente procede a realizar el llamado al servicio que permitira la creacion.
      * @param newPerson
-     * @return retorno
+     * @return cadena que representa el resultado de la operacion
      */
     //POST
     @PostMapping("/personNewPerson")
@@ -94,9 +103,9 @@ public class PersonController {
     }
 
     /**
-     * Metodo para obtener todos los usuarios de la base de datos llamado getAllPersons
+     * Metodo para obtener todos los usuarios de la base de datos.
      * @param
-     * @return ArrayList<Person>
+     * @return lista de personas que registradas en la libreria
      */
     //GET
     @GetMapping("/lista")
@@ -106,9 +115,9 @@ public class PersonController {
 
     }
     /**
-     * Metodo para buscar un usuario teniendo su id llamado getJustOnePerson
+     * Metodo para buscar un usuario teniendo su id
      * @param id
-     * @return Person
+     * @return persona en especifico
      */
     //GET
     @GetMapping("/person/{idPerson}")
@@ -116,9 +125,10 @@ public class PersonController {
         return personService.getPersonById(id);
     }
     /**
-     * Metodo modificar TODA la informacion de un usuario llamado putPerson
+     * Metodo modificar TODA la informacion de un usuario. En primer lugar se encarga de revisar que los campos no
+     * esten vacios. Una vez verificado, llama a la funcion del servicio que permitira ejecutar la funcionalidad.
      * @param updatePerson
-     * @return retorno
+     * @return cadena que representa el resultado de la operacion
      */
     //PUT
     @PutMapping("/personUpdate")
@@ -139,9 +149,10 @@ public class PersonController {
     //PATCH
     //Name
     /**
-     * Metodo para modificar solo el nombre de la persona llamado patchPersonName
+     * Metodo para modificar solo el nombre de la persona. En primer lugar revisa que los campos no esten vacios y posteriormente
+     * realiza el llamado al metodo del servicio que permite ejecturar la funcionalidad
      * @param patchChangeName
-     * @return retorno
+     * @return cadena que representa el resultado de la operacion
      */
     @PatchMapping("/changeName")
     private String patchPersonName(@RequestBody PatchChangeName patchChangeName) {
@@ -157,9 +168,10 @@ public class PersonController {
     }
     //Surname
     /**
-     * Metodo para modificar solo el apellido de la persona llamado patchPersonSurname
+     * Metodo para modificar solo el apellido de la persona.  En primer lugar revisa que los campos no esten vacios y posteriormente
+     *      * realiza el llamado al metodo del servicio que permite ejecturar la funcionalidad
      * @param patchChangeSurname
-     * @return retorno
+     * @return cadena que representa el resultado de la operacion
      */
     @PatchMapping("/changeSurname")
     private String patchPersonSurname(@RequestBody PatchChangeSurname patchChangeSurname) {
@@ -175,9 +187,10 @@ public class PersonController {
     }
     //Birth
     /**
-     * Metodo para modificar solo la fecha de nacimiento de la persona llamado patchPersonBirth
+     * Metodo para modificar solo la fecha de nacimiento de la persona. En primer lugar revisa que los campos no esten vacios y posteriormente
+     *      * realiza el llamado al metodo del servicio que permite ejecturar la funcionalidad
      * @param patchChangeBirth
-     * @return retorno
+     * @return cadena que representa el resultado de la operacion
      */
     @PatchMapping("/changeBirth")
     private String patchPersonBirth(@RequestBody PatchChangeBirth patchChangeBirth) {
@@ -193,9 +206,10 @@ public class PersonController {
     }
     //Charge
     /**
-     * Metodo para modificar solo el cargo de la persona llamado patchPersonCharge
+     * Metodo para modificar solo el cargo de la persona.  En primer lugar revisa que los campos no esten vacios y posteriormente
+     *  realiza el llamado al metodo del servicio que permite ejecturar la funcionalidad
      * @param patchChangeCharge
-     * @return retorno
+     * @return cadena que representa el resultado de la operacion
      */
     @PatchMapping("/changeCharge")
     private String patchPersonCharge(@RequestBody PatchChangeCharge patchChangeCharge) {
@@ -211,9 +225,9 @@ public class PersonController {
     }
     //Delete
     /**
-     * Metodo para eliminar una persona de la aplicacion llamado deletePerson
+     * Metodo para eliminar una persona de la aplicacion.
      * @param id
-     * @return retorno
+     * @return cadena que representa el resultado de la operacion
      */
     @DeleteMapping("/personDelete/{idPerson}")
     private String deletePerson(@PathVariable("idPerson") Integer id) {

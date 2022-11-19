@@ -2,6 +2,9 @@ package com.example.editorialmicroservice.dto;
 
 import javax.validation.constraints.NotBlank;
 
+/**
+ * Esta clase repressenta al objeto editorial para aplicar el patron DTO
+ */
 public class EditorialDto {
     @NotBlank
     private String nombre;

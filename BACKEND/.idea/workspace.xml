@@ -46,10 +46,8 @@
       <change beforePath="$PROJECT_DIR$/../BackendMar/Microservicios/PersonMicroService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../BackendMar/Microservicios/PersonMicroService/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/app-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/app.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/models/book.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/models/editorial.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/service/login.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../FRONTEND/proyecto-bookstore/src/app/service/login.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +82,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< Updated upstream
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
@@ -92,6 +91,17 @@
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/anrip/Desktop/CodingUniversidad/8vo Semestre/Desarrollo Web/Proyecto/Desarrollo-Web-Proyecto/BackendMar/Microservicios/PersonMicroService&quot;
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/marir/OneDrive/Desktop/ingenieria/octavo/DesarrolloWeb/ENTREGA3PROYECTO/Desarrollo-Web-Proyecto/BACKEND",
+    "spring.configuration.checksum": "be1a0f47cc1c5a83f681246e0c1d7e49"
+>>>>>>> Stashed changes
   }
 }</component>
   <component name="ReactorSettings">
@@ -104,7 +114,11 @@
       </set>
     </option>
   </component>
+<<<<<<< Updated upstream
   <component name="RunManager">
+=======
+  <component name="RunManager" selected="Spring Boot.ApiGatewayApplication">
+>>>>>>> Stashed changes
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="APIGateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.apigateway.ApiGatewayApplication" />
@@ -162,7 +176,8 @@
       <workItem from="1668630226770" duration="62000" />
       <workItem from="1668630321425" duration="210000" />
       <workItem from="1668630545559" duration="109000" />
-      <workItem from="1668630666484" duration="1128000" />
+      <workItem from="1668630666484" duration="3831000" />
+      <workItem from="1668812197705" duration="3401000" />
     </task>
     <servers />
   </component>

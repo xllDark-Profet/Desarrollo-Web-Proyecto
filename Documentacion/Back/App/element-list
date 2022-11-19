@@ -1,0 +1,14 @@
+com.example.apigateway
+com.example.bookmicroservice
+com.example.bookmicroservice.controller
+com.example.bookmicroservice.dto
+com.example.bookmicroservice.entity
+com.example.bookmicroservice.repository
+com.example.bookmicroservice.service
+com.example.discoveryserver
+com.example.editorialmicroservice
+com.example.editorialmicroservice.controller
+com.example.editorialmicroservice.dto
+com.example.editorialmicroservice.entity
+com.example.editorialmicroservice.repository
+com.example.editorialmicroservice.service

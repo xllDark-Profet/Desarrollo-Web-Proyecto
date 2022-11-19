@@ -77,16 +77,20 @@ public class PersonController {
      */
     //POST
     @PostMapping("/personNewPerson")
-    private String postNewPerson(@RequestBody Person newPerson) {
+    private ResponseEntity<String> postNewPerson(@RequestBody Person newPerson) {
         String retorno = "";
         if (newPerson.getName()==null || newPerson.getId()==null|| newPerson.getSurname()==null||
         newPerson.getBirth()==null|| newPerson.getCharge()==null){
             retorno="Hay campos obligatorios que no ha llenado";
+            return new ResponseEntity<>(retorno, HttpStatus.BAD_REQUEST);
         } else if (personService.createPerson(newPerson)!=1) {
             retorno="No se pudo crear.";
+            return new ResponseEntity<>(retorno, HttpStatus.BAD_REQUEST);
         }
-        else{retorno="Se ha creado exitosamente";}
-        return retorno;
+        else{retorno="Se ha creado exitosamente";
+            return new ResponseEntity<>(retorno, HttpStatus.OK);
+        }
+
     }
 
     /**
@@ -95,9 +99,11 @@ public class PersonController {
      * @return ArrayList<Person>
      */
     //GET
-    @GetMapping("/person")
-    private ArrayList<Person> getAllPersons() {
-        return personService.getAllPersons();
+    @GetMapping("/lista")
+    private ResponseEntity<List<Person>> getAllPersons() {
+        List<Person> list = personService.getAllPersons();
+        return new ResponseEntity(list, HttpStatus.OK);
+
     }
     /**
      * Metodo para buscar un usuario teniendo su id llamado getJustOnePerson

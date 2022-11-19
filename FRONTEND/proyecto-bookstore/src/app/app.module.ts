@@ -24,6 +24,9 @@ import { NuevaEditorialComponent } from './editorial/nueva-editorial/nueva-edito
 import { EditarEditorialComponent } from './editorial/editar-editorial/editar-editorial.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { CrudTablePersonaComponent } from './persona/crud-table-persona/crud-table-persona.component';
+import { EditarPersonaComponent } from './persona/editar-persona/editar-persona.component';
+import { NuevaPersonaComponent } from './persona/nueva-persona/nueva-persona.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +41,9 @@ import { RegisterComponent } from './register/register.component';
     EditarEditorialComponent,
     LoginComponent,
     RegisterComponent,
+    CrudTablePersonaComponent,
+    EditarPersonaComponent,
+    NuevaPersonaComponent,
   ],
   imports: [
     BrowserModule,

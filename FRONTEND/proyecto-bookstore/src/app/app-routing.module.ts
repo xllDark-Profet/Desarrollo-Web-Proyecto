@@ -8,6 +8,9 @@ import { CrudTableBookComponent } from './book/crud-table-book/crud-table-book.c
 import { CrudTableEditorialComponent } from './editorial/crud-table-editorial/crud-table-editorial.component';
 import { NuevaEditorialComponent } from './editorial/nueva-editorial/nueva-editorial.component';
 import { EditarEditorialComponent } from './editorial/editar-editorial/editar-editorial.component';
+import { CrudTablePersonaComponent } from './persona/crud-table-persona/crud-table-persona.component';
+import { EditarPersonaComponent } from './persona/editar-persona/editar-persona.component';
+import { NuevaPersonaComponent } from './persona/nueva-persona/nueva-persona.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 
@@ -22,6 +25,9 @@ const routes: Routes = [
   {path: 'editorial-table', component: CrudTableEditorialComponent},
   {path: 'create-editorial', component: NuevaEditorialComponent},
   {path: 'update-editorial/:id', component: EditarEditorialComponent},
+  {path: 'persona-table', component: CrudTablePersonaComponent},
+  {path: 'create-persona', component: NuevaPersonaComponent},
+  {path: 'update-persona/:id', component: EditarPersonaComponent},
   {path: '**', redirectTo: '', pathMatch: 'full'},
   
 ];

@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
 import java.util.ArrayList;
+import java.util.List;
 
 @Service
 public class PersonService {
@@ -35,7 +36,7 @@ public class PersonService {
     }
 
     //Get all
-    public ArrayList<Person> getAllPersons() {
+    public List<Person> getAllPersons() {
         return personRepository.findAll();
     }
 
